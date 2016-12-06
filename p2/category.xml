@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/nl.esciencecenter.e3dchem.knime.plants.feature-0.0.1.jar" id="nl.esciencecenter.e3dchem.knime.plants.feature" version="0.0.1">
+      <category name="nl.esciencecenter.e3dchem.knime.plants"/>
+   </feature>
+   <feature url="features/nl.esciencecenter.e3dchem.knime.plants.feature.source_0.0.1.jar" id="nl.esciencecenter.e3dchem.knime.plants.feature.source" version="0.0.1">
+      <category name="nl.esciencecenter.e3dchem.knime.plants.sources"/>
+   </feature>
+   <category-def name="nl.esciencecenter.e3dchem.knime.plants" label="[Enter Category Label here.]">
+      <description>
+         [Enter Category Description here.]
+      </description>
+   </category-def>
+   <category-def name="nl.esciencecenter.e3dchem.knime.plants.sources" label="[Enter Sources Category Label here.]">
+      <description>
+        [Enter Sources of Category Description here.]
+      </description>
+   </category-def>
+</site>
