@@ -2,20 +2,31 @@
 <?eclipse version="3.0"?>
 <plugin>
 
-    <!-- This is an example for providing an own category
       <extension
          point="org.knime.workbench.repository.categories">
       <category
-            description="Category containing my nodes"
-            icon="icons/default.png"
-            level-id="myNodes"
-            name="My nodes"
-            path="/"/>
+            description="Category containing PLANTS nodes"
+            icon="src/java/nl/esciencecenter/e3dchem/knime/plants/default.png"
+            level-id="plants"
+            name="PLANTS"
+            path="/community/3d-e-chem"/>
    </extension>
-   -->
 
     <extension point="org.knime.workbench.repository.nodes">
-        <node category-path="/" factory-class="nl.esciencecenter.e3dchem.knime.plants.ConfigureFactory" id="nl.esciencecenter.e3dchem.knime.plants.ConfigureFactory"/>
+        <node category-path="/community/3d-e-chem/plants" factory-class="nl.esciencecenter.e3dchem.knime.plants.ConfigureFactory"/>
     </extension>
-
+    <!--
+    <extension
+          point="org.knime.workbench.repository.metanode">
+        <PersistedMetaNode
+             category-path="/community/3d-e-chem/plants"
+             description="Meta node to write PLANTS session directory with config, ligands and protein files"
+             expert-flag="false"
+             icon="src/java/nl/esciencecenter/e3dchem/knime/plants/default.png"
+             id="plants_session_builder"
+             name="PLANTS session builder"
+             workflowDir="src/knime/PLANTS-session-metanode">
+       </PersistedMetaNode>
+    </extension>
+    -->
 </plugin>

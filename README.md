@@ -1,10 +1,10 @@
 # knime-plants
+
 KNIME nodes to configure, run and analyze PLANTS protein-ligand docking
 
 PLANTS homepage at http://www.mnf.uni-tuebingen.de/fachbereiche/pharmazie-und-biochemie/pharmazie/pharmazeutische-chemie/pd-dr-t-exner/research/plants.html
 
 Knime node skeleton with sample code as described [here](https://tech.knime.org/developer-guide).
-
 
 [![Build Status](https://travis-ci.org/3D-e-Chem/knime-plants.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-plants)
 
@@ -20,7 +20,7 @@ Steps to get the Configure KNIME node inside KNIME:
 
 1. Goto Help > Install new software ... menu
 2. Press add button
-3. Fill text fields with url of update site which contains this node.
+3. Fill text fields with https://3d-e-chem.github.io/updates which contains this node.
 4. Select --all sites-- in `work with` pulldown
 5. Select the node
 6. Install software

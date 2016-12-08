@@ -24,17 +24,9 @@ public class ConfigureFactory
      */
     @Override
     public int getNrNodeViews() {
-        return 1;
+        return 0;
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public NodeView<ConfigureModel> createNodeView(final int viewIndex,
-            final ConfigureModel nodeModel) {
-        return new ConfigureView(nodeModel);
-    }
 
     /**
      * {@inheritDoc}
@@ -51,5 +43,11 @@ public class ConfigureFactory
     public NodeDialogPane createNodeDialogPane() {
         return new ConfigureDialog();
     }
+
+	@Override
+	public NodeView<ConfigureModel> createNodeView(int viewIndex, ConfigureModel nodeModel) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

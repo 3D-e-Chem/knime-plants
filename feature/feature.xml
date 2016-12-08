@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="nl.esciencecenter.e3dchem.knime.plants.feature"
-      label="nl.esciencecenter.e3dchem.knime.plants Feature"
-      version="0.0.1"
-      provider-name="[Enter provider name here.]">
+      label="KNIME PLANTS"
+      version="0.0.12"
+      provider-name="Netherlands eScience Center">
 
-  <description url="https://github.com/3D-e-Chem/knime-plants">
-     [Enter Feature Description here.]
-  </description>
+   <description url="https://github.com/3D-e-Chem/knime-plants">
+      KNIME nodes to configure, run and analyze PLANTS protein-ligand docking
+   </description>
 
-  <copyright url="http://www.example.com/copyright">
-     [Enter Copyright Description here.]
-  </copyright>
+   <copyright url="https://www.esciencecenter.nl">
+      Copyright Netherlands eScience Center 2015
+   </copyright>
 
    <license url="https://www.apache.org/licenses/LICENSE-2.0.txt">
       Apache License
@@ -218,7 +218,7 @@ http://www.apache.org/licenses/
    </license>
 
    <url>
-      <update label="Update site" url="https://www.example.com/updates"/>
+      <update label="Update site" url="https://3d-e-chem.github.io/updates"/>
       <discovery label="Discovery site" url="https://github.com/3D-e-Chem/knime-plants"/>
    </url>
 
