@@ -20,11 +20,11 @@
           point="org.knime.workbench.repository.metanode">
         <PersistedMetaNode
              category-path="/community/3d-e-chem/plants"
-             description="&lt;p&gt;Meta node to write PLANTS session directory with config, ligands and protein files.&lt;/p&gt;%%00013%%00010Port 0 should have a single row with the following columns:%%00013%%00010&lt;ul&gt;%%00013%%00010&lt;li&gt;session_dir: Directory name of session as a string&lt;/li&gt;%%00013%%00010&lt;li&gt;protein: Protein in mol2 format&lt;/li&gt;%%00013%%00010&lt;/ul&gt;%%00013%%00010%%00013%%00010Port 1 should have following columns:%%00013%%00010&lt;ul&gt;%%00013%%00010&lt;li&gt;Molecule: Ligand in mol2 format&lt;/li&gt;%%00013%%00010&lt;/ul&gt;"
+             description=""
              expert-flag="false"
-             icon="src/java/nl/esciencecenter/e3dchem/knime/plants/default.png"
+             icon="nl/esciencecenter/e3dchem/knime/plants/default.png"
              id="plants_session_builder"
-             name="PLANTS session builder"
+             name="PLANTS Session Builder"
              workflowDir="src/knime/PLANTS-session-builder">
        </PersistedMetaNode>
     </extension>
