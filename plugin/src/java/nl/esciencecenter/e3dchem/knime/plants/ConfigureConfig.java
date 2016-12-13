@@ -39,9 +39,6 @@ public class ConfigureConfig {
 	public SettingsModelBoolean write_ranking_links = new SettingsModelBoolean("write_ranking_links", false);
 	public SettingsModelBoolean write_merged_protein = new SettingsModelBoolean("write_merged_protein", false);
 
-	public ConfigureConfig() {
-	}
-
 	public void saveSettingsTo(final NodeSettingsWO settings) {
 		// search algorithm
 		search_speed.saveSettingsTo(settings);

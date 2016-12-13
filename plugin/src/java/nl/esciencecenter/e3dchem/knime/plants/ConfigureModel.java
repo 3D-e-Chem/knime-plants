@@ -33,7 +33,7 @@ import com.github.mustachejava.MustacheFactory;
  */
 public class ConfigureModel extends NodeModel {
 	private static final int IN_PORT = 0;
-	ConfigureConfig config = new ConfigureConfig();
+	private ConfigureConfig config = new ConfigureConfig();
 	private Mustache mustache;
 	private String templateFilename = "config.mustache";
 
