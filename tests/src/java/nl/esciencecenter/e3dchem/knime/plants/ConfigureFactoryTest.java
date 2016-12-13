@@ -26,7 +26,7 @@ public class ConfigureFactoryTest {
 	
 	@Test
 	public void test_createNodeModel() {
-		assertEquals(ConfigureDialog.class, factory.createNodeModel().getClass());
+		assertEquals(ConfigureModel.class, factory.createNodeModel().getClass());
 	}
 	
 	@Test
