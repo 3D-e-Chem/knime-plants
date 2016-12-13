@@ -38,7 +38,6 @@ public class ConfigureConfig {
 	public SettingsModelBoolean write_multi_mol2 = new SettingsModelBoolean("write_multi_mol2", true);
 	public SettingsModelBoolean write_ranking_links = new SettingsModelBoolean("write_ranking_links", false);
 	public SettingsModelBoolean write_merged_protein = new SettingsModelBoolean("write_merged_protein", false);
-	public SettingsModelNumber aco_ants;
 
 	public ConfigureConfig() {
 	}
