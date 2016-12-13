@@ -8,6 +8,9 @@ import org.knime.core.node.InvalidSettingsException;
 import org.knime.core.node.NodeSettingsRO;
 import org.knime.core.node.defaultnodesettings.SettingsModelString;
 
+/**
+ * SettingsModelString where value must be one of choices
+ */
 public class SettingsModelStringSet extends SettingsModelString {
 	private Set<String> choices;
 
