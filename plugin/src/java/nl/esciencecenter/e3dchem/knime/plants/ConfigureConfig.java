@@ -20,7 +20,7 @@ public class ConfigureConfig {
 	public SettingsModelNumber bindingsite_center_x = new SettingsModelDouble("bindingsite_center_x", 0.0);
 	public SettingsModelNumber bindingsite_center_y = new SettingsModelDouble("bindingsite_center_y", 0.0);
 	public SettingsModelNumber bindingsite_center_z = new SettingsModelDouble("bindingsite_center_z", 0.0);
-	public SettingsModelNumber bindingsite_radius = new SettingsModelDouble("bindingsite_raduis", 1.0);
+	public SettingsModelNumber bindingsite_radius = new SettingsModelDouble("bindingsite_radius", 1.0);
 	// cluster algorithm
 	public SettingsModelNumber cluster_rmsd = new SettingsModelDouble("cluster_rmsd", 2.0);
 	public SettingsModelNumber cluster_structures = new SettingsModelInteger("cluster_structures", 10);
@@ -28,8 +28,8 @@ public class ConfigureConfig {
 	public SettingsModelStringSet scoring_function = new SettingsModelStringSet("scoring_function", "chemplp",
 			"chemplp", "plp", "plp95");
 	// input
-	public SettingsModelString protein_file = new SettingsModelString("protein_file", null);
-	public SettingsModelString ligand_file = new SettingsModelString("ligand_file", null);
+	public SettingsModelString protein_file = new SettingsModelString("protein_file", "protein.mol2");
+	public SettingsModelString ligand_file = new SettingsModelString("ligand_file", "ligands.mol2");
 	// output
 	public SettingsModelString output_dir = new SettingsModelString("output_dir", "results");
 	public SettingsModelBoolean write_protein_conformations = new SettingsModelBoolean("write_protein_conformations",
@@ -139,6 +139,5 @@ public class ConfigureConfig {
 		map.put("write_ranking_links", write_ranking_links.getBooleanValue());
 		map.put("write_merged_protein", write_merged_protein.getBooleanValue());
 		return map;
-
 	}
 }

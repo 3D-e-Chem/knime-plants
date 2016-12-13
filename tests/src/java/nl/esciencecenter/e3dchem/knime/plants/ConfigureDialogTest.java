@@ -8,7 +8,10 @@ public class ConfigureDialogTest {
 
 	@Test
 	public void test() {
-		ConfigureDialog dialog = new ConfigureDialog();
-		assertTrue(dialog.getPanel().getComponentCount() > 6);
+		ConfigureFactory factory = new ConfigureFactory();		
+		ConfigureDialog dialog = (ConfigureDialog) factory.createNodeDialogPane();
+		
+		int result = dialog.getPanel().getComponentCount();
+		assertEquals(2, result);
 	}
 }
