@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<knimeNode icon="./default.png" type="Source" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
+<knimeNode icon="./default.png" type="Manipulator" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
     <name>PLANTS Configure</name>
     
     <shortDescription>
@@ -7,11 +7,9 @@
     </shortDescription>
     
     <fullDescription>
-        <intro>Node to generate a PLANTS configuration.
+        <intro>Node to generate a <a href="http://www.mnf.uni-tuebingen.de/fachbereiche/pharmazie-und-biochemie/pharmazie/pharmazeutische-chemie/pd-dr-t-exner/research/plants.html">PLANTS</a> configuration.
         
-        <p>PLANTS homepage at http://www.mnf.uni-tuebingen.de/fachbereiche/pharmazie-und-biochemie/pharmazie/pharmazeutische-chemie/pd-dr-t-exner/research/plants.html</p>
-        
-        <p>Source code at <a href="https://github.com/3D-e-Chem/knime-plants/">https://github.com/3D-e-Chem/knime-plants/</a>.</p>
+        <p>Source code for PLANTS node is available on <a href="https://github.com/3D-e-Chem/knime-plants/">GitHub</a>.</p>
         </intro>
         
         <tab name="Search algorithm">
@@ -45,6 +43,7 @@
     </fullDescription>
     
     <ports>
-        <outPort index="0" name="PLANTS config string">Port with PLANTS configuration</outPort>
+        <inPort index="0" name="Input table">Input table</inPort>
+        <outPort index="0" name="Output table">Table with added PLANTS configuration column</outPort>
     </ports>    
 </knimeNode>
