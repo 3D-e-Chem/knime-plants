@@ -4,9 +4,9 @@ KNIME nodes to configure, run and analyze PLANTS protein-ligand docking
 
 PLANTS homepage at http://www.mnf.uni-tuebingen.de/fachbereiche/pharmazie-und-biochemie/pharmazie/pharmazeutische-chemie/pd-dr-t-exner/research/plants.html
 
-Knime node skeleton with sample code as described [here](https://tech.knime.org/developer-guide).
-
 [![Build Status](https://travis-ci.org/3D-e-Chem/knime-plants.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-plants)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/74d1f7600e4c43cbab963d7f30963cee)](https://www.codacy.com/app/3D-e-Chem/knime-plants?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=3D-e-Chem/knime-plants&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/74d1f7600e4c43cbab963d7f30963cee)](https://www.codacy.com/app/3D-e-Chem/knime-plants?utm_source=github.com&utm_medium=referral&utm_content=3D-e-Chem/knime-plants&utm_campaign=Badge_Coverage)
 
 This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform build steps.
 
