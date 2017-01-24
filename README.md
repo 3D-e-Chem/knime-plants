@@ -85,11 +85,4 @@ See https://github.com/3D-e-Chem/knime-testflow#3-add-test-workflow
   1. Make clone of an update site repo
   2. Append release to the update site with `mvn install -Dtarget.update.site=<path to update site>`
 5. Commit and push changes in this repo and update site repo.
-
-## Offline Knime update site
-
-If Knime update site can not be contacted then use a local version.
-
-1. Download zip of update site from https://www.knime.org/downloads/update
-2. Unzip it
-3. To maven commands add `-Dknime.update.site=file://<path to update site directory>`
+6. Make nodes available to 3D-e-Chem KNIME feature by following steps at https://github.com/3D-e-Chem/knime-node-collection#new-release
