@@ -4,7 +4,7 @@
     <parent>
         <artifactId>nl.esciencecenter.e3dchem.knime.plants</artifactId>
         <groupId>nl.esciencecenter.e3dchem.knime.plants</groupId>
-        <version>0.0.13</version>
+        <version>0.1.14</version>
     </parent>
     <artifactId>nl.esciencecenter.e3dchem.knime.plants.p2</artifactId>
     <packaging>eclipse-repository</packaging>

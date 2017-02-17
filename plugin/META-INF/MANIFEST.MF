@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PLANTS
 Bundle-SymbolicName: nl.esciencecenter.e3dchem.knime.plants.plugin;singleton:=true
-Bundle-Version: 0.0.13
+Bundle-Version: 0.1.14
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Activator: nl.esciencecenter.e3dchem.knime.plants.Activator
 Bundle-Vendor: Netherlands eScience Center
@@ -12,7 +12,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.knime.base;bundle-version="[3.1.0,4.0.0)",
  org.knime.core;bundle-version="[3.1.0,4.0.0)",
  org.knime.chem.types;bundle-version="[3.0.0,4.0.0)",
- com.vernalis.knime.feature.feature.group;bundle-version="[1.8.0,2.0.0)",
+ com.vernalis.knime;bundle-version="[1.8.0,2.0.0)",
  nl.esciencecenter.e3dchem.plugin
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .,
