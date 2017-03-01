@@ -1,6 +1,6 @@
 package nl.esciencecenter.e3dchem.knime.plants;
 
-import org.eclipse.core.runtime.Plugin;
+import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
 
 /**
@@ -11,7 +11,7 @@ import org.osgi.framework.BundleContext;
  * file in the project root directory accordingly.
  *
  */
-public class Activator extends Plugin {
+public class Activator extends AbstractUIPlugin  {
     // The plug-in ID
     public static final String PLUGIN_ID = "nl.esciencecenter.e3dchem.knime.plants.plugin";
     // The shared instance.
@@ -57,5 +57,4 @@ public class Activator extends Plugin {
     public static Activator getDefault() {
         return plugin;
     }
-
 }

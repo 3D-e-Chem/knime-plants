@@ -14,6 +14,7 @@
 
     <extension point="org.knime.workbench.repository.nodes">
         <node category-path="/community/3d-e-chem/plants" factory-class="nl.esciencecenter.e3dchem.knime.plants.ConfigureFactory"/>
+        <node category-path="/community/3d-e-chem/plants" factory-class="nl.esciencecenter.e3dchem.knime.plants.execute.ExecuteFactory"/>
     </extension>
 
     <extension
@@ -57,5 +58,20 @@
              name="PLANTS Screening results reader"
              workflowDir="src/knime/PLANTS-screening-results-reader">
         </PersistedMetaNode>
+    </extension>
+    <extension
+          point="org.eclipse.ui.preferencePages">
+       <page
+             category="org.knime.workbench.ui.preferences"
+             class="nl.esciencecenter.e3dchem.knime.plants.WorkbenchPreferencePage"
+             id="nl.esciencecenter.e3dchem.knime.plants.page"
+             name="PLANTS">
+       </page>
+    </extension>
+    <extension
+          point="org.eclipse.core.runtime.preferences">
+       <initializer
+             class="nl.esciencecenter.e3dchem.knime.plants.PreferenceInitializer">
+       </initializer>
     </extension>
 </plugin>
