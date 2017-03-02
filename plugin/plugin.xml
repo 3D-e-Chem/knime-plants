@@ -13,8 +13,15 @@
    </extension>
 
     <extension point="org.knime.workbench.repository.nodes">
-        <node category-path="/community/3d-e-chem/plants" factory-class="nl.esciencecenter.e3dchem.knime.plants.ConfigureFactory"/>
-        <node category-path="/community/3d-e-chem/plants" factory-class="nl.esciencecenter.e3dchem.knime.plants.execute.ExecuteFactory"/>
+        <node
+              category-path="/community/3d-e-chem/plants"
+              deprecated="false"
+              factory-class="nl.esciencecenter.e3dchem.knime.plants.configure.ConfigureFactory"/>
+        <node
+              category-path="/community/3d-e-chem/plants"
+              deprecated="false"
+              factory-class="nl.esciencecenter.e3dchem.knime.plants.run.RunNodeFactory">
+        </node>
     </extension>
 
     <extension
@@ -27,16 +34,6 @@
              id="plants_session_builder"
              name="PLANTS Session Builder"
              workflowDir="src/knime/PLANTS-session-builder">
-        </PersistedMetaNode>
-
-        <PersistedMetaNode
-             category-path="/community/3d-e-chem/plants"
-             description=""
-             expert-flag="false"
-             icon="nl/esciencecenter/e3dchem/knime/plants/default.png"
-             id="plants_runner"
-             name="PLANTS Runner"
-             workflowDir="src/knime/PLANTS-runner">
         </PersistedMetaNode>
 
         <PersistedMetaNode
@@ -57,6 +54,15 @@
              id="plants_screening_results_reader"
              name="PLANTS Screening results reader"
              workflowDir="src/knime/PLANTS-screening-results-reader">
+        </PersistedMetaNode>
+        
+        <PersistedMetaNode
+              category-path="/community/3d-e-chem/plants"
+              expert-flag="false"
+              icon="nl/esciencecenter/e3dchem/knime/plants/default.png"
+              id="plants bindingsite reader"
+              name="PLANTS Binding site reader"
+              workflowDir="src/knime/PLANTS-bindingsite-reader/">
         </PersistedMetaNode>
     </extension>
     <extension

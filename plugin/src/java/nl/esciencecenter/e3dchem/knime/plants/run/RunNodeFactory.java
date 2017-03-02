@@ -1,14 +1,14 @@
-package nl.esciencecenter.e3dchem.knime.plants.execute;
+package nl.esciencecenter.e3dchem.knime.plants.run;
 
 import org.knime.core.node.NodeDialogPane;
 import org.knime.core.node.NodeFactory;
 import org.knime.core.node.NodeView;
 
-public class ExecuteFactory extends NodeFactory<ExecuteModel>{
+public class RunNodeFactory extends NodeFactory<RunNodeModel>{
 
 	@Override
-	public ExecuteModel createNodeModel() {
-		return new ExecuteModel();
+	public RunNodeModel createNodeModel() {
+		return new RunNodeModel();
 	}
 
 	@Override
@@ -17,7 +17,7 @@ public class ExecuteFactory extends NodeFactory<ExecuteModel>{
 	}
 
 	@Override
-	public NodeView<ExecuteModel> createNodeView(int viewIndex, ExecuteModel nodeModel) {
+	public NodeView<RunNodeModel> createNodeView(int viewIndex, RunNodeModel nodeModel) {
 		return null;
 	}
 
@@ -28,7 +28,7 @@ public class ExecuteFactory extends NodeFactory<ExecuteModel>{
 
 	@Override
 	protected NodeDialogPane createNodeDialogPane() {
-		return new ExecuteDialog();
+		return new RunNodeDialog();
 	}
 
 }

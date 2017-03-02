@@ -10,6 +10,8 @@ import org.junit.Test;
 import org.knime.core.node.InvalidSettingsException;
 import org.knime.core.node.NodeSettings;
 
+import nl.esciencecenter.e3dchem.knime.plants.configure.ConfigureConfig;
+
 public class ConfigureConfigTest {
 	private ConfigureConfig config;
 	

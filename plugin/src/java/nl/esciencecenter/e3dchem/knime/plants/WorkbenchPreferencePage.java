@@ -3,13 +3,13 @@ package nl.esciencecenter.e3dchem.knime.plants;
 import java.io.IOException;
 
 import org.eclipse.jface.preference.FieldEditorPreferencePage;
-import org.eclipse.jface.preference.FileFieldEditor;
+import org.eclipse.jface.preference.StringFieldEditor;
 import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.IWorkbenchPreferencePage;
 
 public class WorkbenchPreferencePage extends FieldEditorPreferencePage implements IWorkbenchPreferencePage {
 
-	private FileFieldEditor executableField;
+	private StringFieldEditor executableField;
 
 	@Override
 	public void init(IWorkbench workbench) {
@@ -19,7 +19,7 @@ public class WorkbenchPreferencePage extends FieldEditorPreferencePage implement
 
 	@Override
 	protected void createFieldEditors() {
-		executableField = new FileFieldEditor("EXECUTABLE", "Path of PLANTS executable", false, getFieldEditorParent());
+		executableField = new StringFieldEditor("EXECUTABLE", "Path of PLANTS executable", getFieldEditorParent());
 		addField(executableField);
 	}
 

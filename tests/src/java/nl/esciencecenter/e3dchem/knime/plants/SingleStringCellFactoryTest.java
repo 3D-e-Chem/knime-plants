@@ -10,6 +10,8 @@ import org.knime.core.data.DataRow;
 import org.knime.core.data.container.CellFactory;
 import org.knime.core.data.def.StringCell;
 
+import nl.esciencecenter.e3dchem.knime.plants.configure.SingleStringCellFactory;
+
 public class SingleStringCellFactoryTest {
 
 	@Test

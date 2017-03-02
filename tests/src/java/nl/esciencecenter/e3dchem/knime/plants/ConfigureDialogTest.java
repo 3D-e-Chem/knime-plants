@@ -4,6 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import nl.esciencecenter.e3dchem.knime.plants.configure.ConfigureDialog;
+import nl.esciencecenter.e3dchem.knime.plants.configure.ConfigureFactory;
+
 public class ConfigureDialogTest {
 
 	@Test

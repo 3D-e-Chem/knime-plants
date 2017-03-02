@@ -1,4 +1,4 @@
-package nl.esciencecenter.e3dchem.knime.plants;
+package nl.esciencecenter.e3dchem.knime.plants.configure;
 
 import org.knime.core.node.NodeDialogPane;
 import org.knime.core.node.NodeFactory;

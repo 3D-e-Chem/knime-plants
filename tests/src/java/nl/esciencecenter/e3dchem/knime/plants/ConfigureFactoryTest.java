@@ -5,6 +5,10 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import nl.esciencecenter.e3dchem.knime.plants.configure.ConfigureDialog;
+import nl.esciencecenter.e3dchem.knime.plants.configure.ConfigureFactory;
+import nl.esciencecenter.e3dchem.knime.plants.configure.ConfigureModel;
+
 public class ConfigureFactoryTest {
 	private ConfigureFactory factory;
 	

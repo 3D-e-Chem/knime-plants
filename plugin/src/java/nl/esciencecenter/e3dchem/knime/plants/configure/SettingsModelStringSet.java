@@ -1,4 +1,4 @@
-package nl.esciencecenter.e3dchem.knime.plants;
+package nl.esciencecenter.e3dchem.knime.plants.configure;
 
 import java.util.Set;
 import java.util.stream.Collectors;

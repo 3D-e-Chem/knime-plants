@@ -88,3 +88,19 @@ See https://github.com/3D-e-Chem/knime-testflow#3-add-test-workflow
   2. Append release to the update site with `mvn install -Dtarget.update.site=<path to update site>`
 5. Commit and push changes in this repo and update site repo.
 6. Make nodes available to 3D-e-Chem KNIME feature by following steps at https://github.com/3D-e-Chem/knime-node-collection#new-release
+
+# License
+
+Copyright 2016 Netherlands eScience Center, Vrije Universiteit Amsterdam and Radboud University
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.

@@ -13,6 +13,8 @@ import org.junit.rules.ExpectedException;
 import org.knime.core.node.InvalidSettingsException;
 import org.knime.core.node.NodeSettings;
 
+import nl.esciencecenter.e3dchem.knime.plants.configure.SettingsModelStringSet;
+
 public class SettingsModelStringSetTest {
 	private SettingsModelStringSet model;
 	

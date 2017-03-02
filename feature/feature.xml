@@ -2,7 +2,7 @@
 <feature
       id="nl.esciencecenter.e3dchem.knime.plants.feature"
       label="KNIME PLANTS"
-      version="0.1.16"
+      version="0.1.17.9"
       provider-name="Netherlands eScience Center">
 
    <description url="https://github.com/3D-e-Chem/knime-plants">
