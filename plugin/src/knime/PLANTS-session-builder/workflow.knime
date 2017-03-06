@@ -9,7 +9,7 @@
 <entry key="lastEdited-by" type="xstring" isnull="true" value=""/>
 <entry key="lastEdited-when" type="xstring" isnull="true" value=""/>
 </config>
-<entry key="customDescription" type="xstring" value="&lt;p&gt;Metanode which writes a PLANTS config, ligands and protein files to a session directory. The session directory can be run executed using the PLANTS executable.&lt;/p&gt;%%00013%%00010Port 0 should have a single row with the following columns:%%00013%%00010&lt;ul&gt;%%00013%%00010&lt;li&gt;session_dir: Directory name of session as a string&lt;/li&gt;%%00013%%00010&lt;li&gt;protein: Protein in mol2 format&lt;/li&gt;%%00013%%00010&lt;/ul&gt;%%00013%%00010%%00013%%00010Port 1 should have following columns:%%00013%%00010&lt;ul&gt;%%00013%%00010&lt;li&gt;Molecule: Ligand in mol2 format&lt;/li&gt;%%00013%%00010&lt;/ul&gt;To customize open the meta node and alter the configure node. "/>
+<entry key="customDescription" type="xstring" value="&lt;p&gt;Metanode which writes a PLANTS config, ligands and protein files to a session directory. The session directory can be run executed using the PLANTS executable.&lt;/p&gt;%%00013%%00010Port 0 should have a single row with the following columns:%%00013%%00010&lt;ul&gt;%%00013%%00010&lt;li&gt;session_dir: Directory name of session as a string&lt;/li&gt;%%00013%%00010&lt;li&gt;Molecule: Protein in mol2 format&lt;/li&gt;%%00013%%00010&lt;/ul&gt;%%00013%%00010%%00013%%00010Port 1 should have following columns:%%00013%%00010&lt;ul&gt;%%00013%%00010&lt;li&gt;Molecule: Ligand in mol2 format&lt;/li&gt;%%00013%%00010&lt;/ul&gt;To customize open the meta node and alter the configure node. "/>
 <entry key="state" type="xstring" value="IDLE"/>
 <config key="workflow_credentials"/>
 <config key="annotations">
