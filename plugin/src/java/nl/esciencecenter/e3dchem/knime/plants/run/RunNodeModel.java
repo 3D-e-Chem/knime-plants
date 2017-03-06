@@ -3,7 +3,6 @@ package nl.esciencecenter.e3dchem.knime.plants.run;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import org.knime.core.data.DataCell;
@@ -15,7 +14,6 @@ import org.knime.core.data.collection.ListCell;
 import org.knime.core.data.def.DefaultRow;
 import org.knime.core.data.def.IntCell;
 import org.knime.core.data.def.StringCell;
-import org.knime.core.data.vector.stringvector.DenseStringVectorCell;
 import org.knime.core.node.BufferedDataContainer;
 import org.knime.core.node.BufferedDataTable;
 import org.knime.core.node.CanceledExecutionException;

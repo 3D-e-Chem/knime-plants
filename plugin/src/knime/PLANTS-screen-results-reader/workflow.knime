@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="workflow.knime">
+<entry key="created_by" type="xstring" value="3.3.1.v201612192115"/>
+<entry key="version" type="xstring" value="3.1.0"/>
+<entry key="name" type="xstring" value="PLANTS screen results loader"/>
+<config key="authorInformation">
+<entry key="authored-by" type="xstring" value="&lt;unknown&gt;"/>
+<entry key="authored-when" type="xstring" value="1970-01-01 01:00:00 +0100"/>
+<entry key="lastEdited-by" type="xstring" isnull="true" value=""/>
+<entry key="lastEdited-when" type="xstring" isnull="true" value=""/>
+</config>
+<entry key="customDescription" type="xstring" value="&lt;p&gt;Metanode which reads results of a PLANTS virtual screening. &lt;/p&gt;%%00013%%00010Port 0 should have a single row with the following columns:%%00013%%00010&lt;ul&gt;%%00013%%00010&lt;li&gt;abs_output_dir: Directory name with PLANTS virtual screening results as a string&lt;/li&gt;%%00013%%00010&lt;/ul&gt;%%00013%%00010"/>
+<entry key="state" type="xstring" value="IDLE"/>
+<config key="workflow_credentials"/>
+<config key="nodes">
+<config key="node_22">
+<entry key="id" type="xint" value="22"/>
+<entry key="node_settings_file" type="xstring" value="CSV Reader (#22)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="404"/>
+<entry key="1" type="xint" value="757"/>
+<entry key="2" type="xint" value="77"/>
+<entry key="3" type="xint" value="79"/>
+</config>
+</config>
+</config>
+<config key="node_24">
+<entry key="id" type="xint" value="24"/>
+<entry key="node_settings_file" type="xstring" value="CSV Reader (#24)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="404"/>
+<entry key="1" type="xint" value="657"/>
+<entry key="2" type="xint" value="77"/>
+<entry key="3" type="xint" value="79"/>
+</config>
+</config>
+</config>
+<config key="node_26">
+<entry key="id" type="xint" value="26"/>
+<entry key="node_settings_file" type="xstring" value="Mol2 Reader (#26)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="404"/>
+<entry key="1" type="xint" value="537"/>
+<entry key="2" type="xint" value="79"/>
+<entry key="3" type="xint" value="79"/>
+</config>
+</config>
+</config>
+<config key="node_29">
+<entry key="id" type="xint" value="29"/>
+<entry key="node_settings_file" type="xstring" value="Java Snippet _simple_ (#29)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="164"/>
+<entry key="1" type="xint" value="97"/>
+<entry key="2" type="xint" value="81"/>
+<entry key="3" type="xint" value="95"/>
+</config>
+</config>
+</config>
+<config key="node_46">
+<entry key="id" type="xint" value="46"/>
+<entry key="node_settings_file" type="xstring" value="Column Appender (#46)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="424"/>
+<entry key="1" type="xint" value="217"/>
+<entry key="2" type="xint" value="113"/>
+<entry key="3" type="xint" value="79"/>
+</config>
+</config>
+</config>
+<config key="node_50">
+<entry key="id" type="xint" value="50"/>
+<entry key="node_settings_file" type="xstring" value="Java Snippet _simple_ (#50)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="684"/>
+<entry key="1" type="xint" value="217"/>
+<entry key="2" type="xint" value="81"/>
+<entry key="3" type="xint" value="95"/>
+</config>
+</config>
+</config>
+<config key="node_51">
+<entry key="id" type="xint" value="51"/>
+<entry key="node_settings_file" type="xstring" value="Java Snippet _simple_ (#51)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="804"/>
+<entry key="1" type="xint" value="217"/>
+<entry key="2" type="xint" value="81"/>
+<entry key="3" type="xint" value="95"/>
+</config>
+</config>
+</config>
+<config key="node_52">
+<entry key="id" type="xint" value="52"/>
+<entry key="node_settings_file" type="xstring" value="Column Appender (#52)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="644"/>
+<entry key="1" type="xint" value="537"/>
+<entry key="2" type="xint" value="113"/>
+<entry key="3" type="xint" value="79"/>
+</config>
+</config>
+</config>
+<config key="node_53">
+<entry key="id" type="xint" value="53"/>
+<entry key="node_settings_file" type="xstring" value="Java Snippet _simple_ (#53)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="544"/>
+<entry key="1" type="xint" value="217"/>
+<entry key="2" type="xint" value="81"/>
+<entry key="3" type="xint" value="95"/>
+</config>
+</config>
+</config>
+<config key="node_54">
+<entry key="id" type="xint" value="54"/>
+<entry key="node_settings_file" type="xstring" value="CSV Reader (#54)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="404"/>
+<entry key="1" type="xint" value="417"/>
+<entry key="2" type="xint" value="77"/>
+<entry key="3" type="xint" value="79"/>
+</config>
+</config>
+</config>
+<config key="node_55">
+<entry key="id" type="xint" value="55"/>
+<entry key="node_settings_file" type="xstring" value="Column Appender (#55)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="744"/>
+<entry key="1" type="xint" value="657"/>
+<entry key="2" type="xint" value="113"/>
+<entry key="3" type="xint" value="79"/>
+</config>
+</config>
+</config>
+<config key="node_56">
+<entry key="id" type="xint" value="56"/>
+<entry key="node_settings_file" type="xstring" value="Java Snippet _simple_ (#56)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="904"/>
+<entry key="1" type="xint" value="217"/>
+<entry key="2" type="xint" value="81"/>
+<entry key="3" type="xint" value="95"/>
+</config>
+</config>
+</config>
+<config key="node_58">
+<entry key="id" type="xint" value="58"/>
+<entry key="node_settings_file" type="xstring" value="PLANTS confi (#58)/workflow.knime"/>
+<entry key="node_is_meta" type="xboolean" value="true"/>
+<entry key="node_type" type="xstring" value="MetaNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="304"/>
+<entry key="1" type="xint" value="97"/>
+<entry key="2" type="xint" value="138"/>
+<entry key="3" type="xint" value="82"/>
+</config>
+</config>
+</config>
+<config key="node_59">
+<entry key="id" type="xint" value="59"/>
+<entry key="node_settings_file" type="xstring" value="Joiner (#59)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="844"/>
+<entry key="1" type="xint" value="757"/>
+<entry key="2" type="xint" value="50"/>
+<entry key="3" type="xint" value="79"/>
+</config>
+</config>
+</config>
+<config key="node_60">
+<entry key="id" type="xint" value="60"/>
+<entry key="node_settings_file" type="xstring" value="RowID (#60)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="524"/>
+<entry key="1" type="xint" value="417"/>
+<entry key="2" type="xint" value="50"/>
+<entry key="3" type="xint" value="79"/>
+</config>
+</config>
+</config>
+<config key="node_61">
+<entry key="id" type="xint" value="61"/>
+<entry key="node_settings_file" type="xstring" value="Table Row To Variable Loop Start (#61)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="144"/>
+<entry key="1" type="xint" value="477"/>
+<entry key="2" type="xint" value="119"/>
+<entry key="3" type="xint" value="95"/>
+</config>
+</config>
+</config>
+<config key="node_62">
+<entry key="id" type="xint" value="62"/>
+<entry key="node_settings_file" type="xstring" value="Loop End (#62)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="944"/>
+<entry key="1" type="xint" value="757"/>
+<entry key="2" type="xint" value="58"/>
+<entry key="3" type="xint" value="79"/>
+</config>
+</config>
+</config>
+</config>
+<config key="connections">
+<config key="connection_0">
+<entry key="sourceID" type="xint" value="-1"/>
+<entry key="destID" type="xint" value="29"/>
+<entry key="sourcePort" type="xint" value="0"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_1">
+<entry key="sourceID" type="xint" value="22"/>
+<entry key="destID" type="xint" value="59"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="2"/>
+</config>
+<config key="connection_2">
+<entry key="sourceID" type="xint" value="24"/>
+<entry key="destID" type="xint" value="55"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="2"/>
+</config>
+<config key="connection_3">
+<entry key="sourceID" type="xint" value="26"/>
+<entry key="destID" type="xint" value="52"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="2"/>
+</config>
+<config key="connection_4">
+<entry key="sourceID" type="xint" value="29"/>
+<entry key="destID" type="xint" value="58"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="0"/>
+</config>
+<config key="connection_5">
+<entry key="sourceID" type="xint" value="29"/>
+<entry key="destID" type="xint" value="46"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="2"/>
+</config>
+<config key="connection_6">
+<entry key="sourceID" type="xint" value="46"/>
+<entry key="destID" type="xint" value="53"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_7">
+<entry key="sourceID" type="xint" value="50"/>
+<entry key="destID" type="xint" value="51"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_8">
+<entry key="sourceID" type="xint" value="51"/>
+<entry key="destID" type="xint" value="56"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_9">
+<entry key="sourceID" type="xint" value="52"/>
+<entry key="destID" type="xint" value="55"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_10">
+<entry key="sourceID" type="xint" value="53"/>
+<entry key="destID" type="xint" value="50"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_11">
+<entry key="sourceID" type="xint" value="54"/>
+<entry key="destID" type="xint" value="60"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_12">
+<entry key="sourceID" type="xint" value="55"/>
+<entry key="destID" type="xint" value="59"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_13">
+<entry key="sourceID" type="xint" value="56"/>
+<entry key="destID" type="xint" value="61"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_14">
+<entry key="sourceID" type="xint" value="58"/>
+<entry key="destID" type="xint" value="46"/>
+<entry key="sourcePort" type="xint" value="0"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_15">
+<entry key="sourceID" type="xint" value="59"/>
+<entry key="destID" type="xint" value="62"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_16">
+<entry key="sourceID" type="xint" value="60"/>
+<entry key="destID" type="xint" value="52"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_17">
+<entry key="sourceID" type="xint" value="61"/>
+<entry key="destID" type="xint" value="24"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="0"/>
+</config>
+<config key="connection_18">
+<entry key="sourceID" type="xint" value="61"/>
+<entry key="destID" type="xint" value="26"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="0"/>
+</config>
+<config key="connection_19">
+<entry key="sourceID" type="xint" value="61"/>
+<entry key="destID" type="xint" value="54"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="0"/>
+</config>
+<config key="connection_20">
+<entry key="sourceID" type="xint" value="61"/>
+<entry key="destID" type="xint" value="22"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="0"/>
+</config>
+<config key="connection_21">
+<entry key="sourceID" type="xint" value="62"/>
+<entry key="destID" type="xint" value="-1"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="0"/>
+</config>
+</config>
+<config key="meta_in_ports">
+<entry key="ui_classname" type="xstring" isnull="true" value=""/>
+<config key="port_enum">
+<config key="inport_0">
+<entry key="index" type="xint" value="0"/>
+<entry key="name" type="xstring" value="Inport 0"/>
+<config key="type">
+<entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+</config>
+</config>
+</config>
+</config>
+<config key="meta_out_ports">
+<entry key="ui_classname" type="xstring" isnull="true" value=""/>
+<config key="port_enum">
+<config key="outport_0">
+<entry key="index" type="xint" value="0"/>
+<entry key="name" type="xstring" value="Connected to: Collected results"/>
+<config key="type">
+<entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+</config>
+</config>
+</config>
+</config>
+<config key="workflow_editor_settings">
+<entry key="workflow.editor.snapToGrid" type="xboolean" value="false"/>
+<entry key="workflow.editor.ShowGrid" type="xboolean" value="false"/>
+<entry key="workflow.editor.gridX" type="xint" value="-1"/>
+<entry key="workflow.editor.gridY" type="xint" value="-1"/>
+<entry key="workflow.editor.zoomLevel" type="xdouble" value="1.0"/>
+<entry key="workflow.editor.curvedConnections" type="xboolean" value="false"/>
+<entry key="workflow.editor.connectionWidth" type="xint" value="1"/>
+</config>
+</config>

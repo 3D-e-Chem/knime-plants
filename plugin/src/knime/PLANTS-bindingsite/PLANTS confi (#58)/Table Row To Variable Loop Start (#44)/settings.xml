@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack">
+<config key="Loop_0">
+<entry key="type" type="xstring" value="loopcontext"/>
+</config>
+<config key="Variable_1">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="RowID"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value=""/>
+</config>
+<config key="Variable_2">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="abs_config_filename"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value=""/>
+</config>
+<config key="Variable_3">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="PLANTS configuration"/>
+<entry key="class" type="xstring" value="INTEGER"/>
+<entry key="value" type="xint" value="0"/>
+</config>
+<config key="Variable_4">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="bindingsite_path"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value=""/>
+</config>
+<config key="Variable_5">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="molecule_path"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value=""/>
+</config>
+<config key="Variable_6">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="plants_working_directory"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value=""/>
+</config>
+<config key="Variable_7">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="plants_mode"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value=""/>
+</config>
+<config key="Variable_8">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="bindingsite_additional_distance"/>
+<entry key="class" type="xstring" value="DOUBLE"/>
+<entry key="value" type="xdouble" value="0.0"/>
+</config>
+<config key="Variable_9">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="Molecule"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value=""/>
+</config>
+<config key="Variable_10">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="maxIterations"/>
+<entry key="class" type="xstring" value="INTEGER"/>
+<entry key="value" type="xint" value="0"/>
+</config>
+<config key="Variable_11">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="currentIteration"/>
+<entry key="class" type="xstring" value="INTEGER"/>
+<entry key="value" type="xint" value="0"/>
+</config>
+<config key="Loop_Execute_12">
+<entry key="type" type="xstring" value="loopcontext_execute"/>
+</config>
+<config key="Variable_13">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="RowID"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="2RH1.A#0"/>
+</config>
+<config key="Variable_14">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="abs_config_filename"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="/tmp/knime-plants-bindingsite1244946372809944362/bindingsite.def"/>
+</config>
+<config key="Variable_15">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="PLANTS configuration"/>
+<entry key="class" type="xstring" value="INTEGER"/>
+<entry key="value" type="xint" value="0"/>
+</config>
+<config key="Variable_16">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="bindingsite_path"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="/tmp/knime-plants-bindingsite1244946372809944362/bindingsite.def"/>
+</config>
+<config key="Variable_17">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="molecule_path"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="/tmp/knime-plants-bindingsite1244946372809944362/molecule.mol2"/>
+</config>
+<config key="Variable_18">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="plants_working_directory"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="/tmp/knime-plants-bindingsite1244946372809944362"/>
+</config>
+<config key="Variable_19">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="plants_mode"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="bind"/>
+</config>
+<config key="Variable_20">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="bindingsite_additional_distance"/>
+<entry key="class" type="xstring" value="DOUBLE"/>
+<entry key="value" type="xdouble" value="6.0"/>
+</config>
+<config key="Variable_21">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="Molecule"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="@&lt;TRIPOS&gt;MOLECULE%%000102RH1.A%%0001045 47 1 0 0 %%00010SMALL%%00010USER_CHARGES%%00010%%00010%%00010@&lt;TRIPOS&gt;ATOM%%00010  1 O17     56.0268    11.2409    -9.2214 O.3   1 CAU  -0.6800 %%00010  2 H17     56.3193    12.2058    -9.3200 H     1 CAU   0.4000 %%00010  3 C16     56.5815    10.5023   -10.2966 C.3   1 CAU   0.2800 %%00010  4 H16     56.2327     9.4733   -10.2028 H     1 CAU   0.0000 %%00010  5 C18     56.1229    11.0653   -11.6452 C.3   1 CAU   0.5030 %%00010  6 H181    56.3051    10.3290   -12.4350 H     1 CAU   0.0000 %%00010  7 H182    56.6583    11.9846   -11.9063 H     1 CAU   0.0000 %%00010  8 N19     54.7002    11.3912   -11.6547 N.4   1 CAU  -0.9060 %%00010  9 H191    54.6207    12.3757   -11.2931 H     1 CAU   0.4500 %%00010 10 H192    54.2080    10.8149   -10.9327 H     1 CAU   0.4500 %%00010 11 C20     53.9135    11.3030   -12.8724 C.3   1 CAU   0.5030 %%00010 12 H20     53.9542    10.2601   -13.2079 H     1 CAU   0.0000 %%00010 13 C21     54.5358    12.2059   -13.9357 C.3   1 CAU   0.0000 %%00010 14 H211    54.6062    13.2439   -13.5922 H     1 CAU   0.0000 %%00010 15 H212    53.9239    12.2010   -14.8433 H     1 CAU   0.0000 %%00010 16 H213    55.5396    11.8711   -14.2174 H     1 CAU   0.0000 %%00010 17 C22     52.4566    11.6701   -12.5742 C.3   1 CAU   0.0000 %%00010 18 H221    52.3827    12.6977   -12.2123 H     1 CAU   0.0000 %%00010 19 H222    52.0200    11.0101   -11.8192 H     1 CAU   0.0000 %%00010 20 H223    51.8489    11.5864   -13.4813 H     1 CAU   0.0000 %%00010 21 C15     58.0857    10.5603   -10.2035 C.3   1 CAU   0.2800 %%00010 22 H151    58.4172    10.0989    -9.2659 H     1 CAU   0.0000 %%00010 23 H152    58.4231    11.6045   -10.1974 H     1 CAU   0.0000 %%00010 24 O14     58.6461     9.8718   -11.3048 O.3   1 CAU  -0.3625 %%00010 25 C13     59.9821     9.7530   -11.5328 C.ar  1 CAU   0.0825 %%00010 26 C12     60.9220    10.3969   -10.7190 C.ar  1 CAU  -0.1500 %%00010 27 H12     60.6064    11.0318    -9.8991 H     1 CAU   0.1500 %%00010 28 C11     62.2838    10.2726   -10.9560 C.ar  1 CAU  -0.1500 %%00010 29 H11     62.9890    10.8035   -10.3207 H     1 CAU   0.1500 %%00010 30 C10     62.7583     9.5065   -12.0067 C.ar  1 CAU  -0.1500 %%00010 31 H10     63.8215     9.4671   -12.2057 H     1 CAU   0.1500 %%00010 32 C8      61.8925     8.8549   -12.8344 C.ar  1 CAU  -0.1516 %%00010 33 C9      60.4623     8.9880   -12.5825 C.ar  1 CAU   0.0000 %%00010 34 N7      62.0465     8.0412   -13.9325 N.pl3 1 CAU   0.0332 %%00010 35 H7      62.9357     7.7874   -14.3366 H     1 CAU   0.2700 %%00010 36 C3      60.8116     7.6467   -14.3942 C.ar  1 CAU  -0.1516 %%00010 37 C4      59.8129     8.2578   -13.5247 C.ar  1 CAU   0.0000 %%00010 38 C2      60.3729     6.8562   -15.4304 C.ar  1 CAU  -0.1500 %%00010 39 H2      61.0837     6.4009   -16.1106 H     1 CAU   0.1500 %%00010 40 C1      59.0100     6.6598   -15.6227 C.ar  1 CAU  -0.1500 %%00010 41 H1      58.6736     6.0382   -16.4514 H     1 CAU   0.1500 %%00010 42 C6      58.0660     7.2496   -14.7868 C.ar  1 CAU  -0.1500 %%00010 43 H6      57.0088     7.0640   -14.9659 H     1 CAU   0.1500 %%00010 44 C5      58.4608     8.0519   -13.7327 C.ar  1 CAU  -0.1500 %%00010 45 H5      57.7073     8.4961   -13.0953 H     1 CAU   0.1500 %%00010@&lt;TRIPOS&gt;BOND%%00010  1   1   2  1   %%00010  2   1   3  1   %%00010  3   3   4  1   %%00010  4   3   5  1   %%00010  5   3  21  1   %%00010  6   5   6  1   %%00010  7   5   7  1   %%00010  8   5   8  1   %%00010  9   8   9  1   %%00010 10   8  10  1   %%00010 11   8  11  1   %%00010 12  11  12  1   %%00010 13  11  13  1   %%00010 14  11  17  1   %%00010 15  13  14  1   %%00010 16  13  15  1   %%00010 17  13  16  1   %%00010 18  17  18  1   %%00010 19  17  19  1   %%00010 20  17  20  1   %%00010 21  21  22  1   %%00010 22  21  23  1   %%00010 23  21  24  1   %%00010 24  24  25  1   %%00010 25  25  26  ar  %%00010 26  25  33  ar  %%00010 27  26  27  1   %%00010 28  26  28  ar  %%00010 29  28  29  1   %%00010 30  28  30  ar  %%00010 31  30  31  1   %%00010 32  30  32  ar  %%00010 33  32  33  ar  %%00010 34  32  34  1   %%00010 35  33  37  1   %%00010 36  34  35  1   %%00010 37  34  36  1   %%00010 38  36  37  ar  %%00010 39  36  38  ar  %%00010 40  37  44  ar  %%00010 41  38  39  1   %%00010 42  38  40  ar  %%00010 43  40  41  1   %%00010 44  40  42  ar  %%00010 45  42  43  1   %%00010 46  42  44  ar  %%00010 47  44  45  1   %%00010@&lt;TRIPOS&gt;SUBSTRUCTURE%%00010  1 CAU  24 GROUP 4 A **** 0%%00010%%00010# MOE 2012.10 (io_trps.svl 2012.10)%%00010"/>
+</config>
+<config key="Variable_22">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="maxIterations"/>
+<entry key="class" type="xstring" value="INTEGER"/>
+<entry key="value" type="xint" value="1"/>
+</config>
+<config key="Variable_23">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="currentIteration"/>
+<entry key="class" type="xstring" value="INTEGER"/>
+<entry key="value" type="xint" value="0"/>
+</config>
+</config>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<config key="CFG_FAILONMISS_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="CFG_FAILONMISS" type="xstring" value="Fail"/>
+<config key="CFG_Integer_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+<entry key="EnabledStatus" type="xboolean" value="false"/>
+</config>
+<entry key="CFG_Integer" type="xint" value="0"/>
+<config key="CFG_Double_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_double"/>
+<entry key="EnabledStatus" type="xboolean" value="false"/>
+</config>
+<entry key="CFG_Double" type="xdouble" value="0.0"/>
+<config key="CFG_String_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="false"/>
+</config>
+<entry key="CFG_String" type="xstring" value=""/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="factory" type="xstring" value="org.knime.base.node.flowvariable.variableloophead.LoopStartVariableNodeFactory"/>
+<entry key="node-name" type="xstring" value="Table Row To Variable Loop Start"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-bundle-version" type="xstring" value="3.3.1.v201612190931"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Core"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-feature-version" type="xstring" value="3.3.1.v201612192115"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="Table Row To Variable Loop Start"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>

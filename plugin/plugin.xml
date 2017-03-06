@@ -31,9 +31,9 @@
              description=""
              expert-flag="false"
              icon="nl/esciencecenter/e3dchem/knime/plants/default.png"
-             id="plants_session_builder"
-             name="PLANTS Session Builder"
-             workflowDir="src/knime/PLANTS-session-builder">
+             id="PLANTS-bindingsite"
+             name="PLANTS bindingsite"
+             workflowDir="src/knime/PLANTS-bindingsite">
         </PersistedMetaNode>
 
         <PersistedMetaNode
@@ -41,7 +41,7 @@
              description=""
              expert-flag="false"
              icon="nl/esciencecenter/e3dchem/knime/plants/default.png"
-             id="plants_configuration_reader"
+             id="PLANTS-configuration-reader"
              name="PLANTS Configuration Reader"
              workflowDir="src/knime/PLANTS-configuration-reader">
         </PersistedMetaNode>
@@ -51,18 +51,27 @@
              description=""
              expert-flag="false"
              icon="nl/esciencecenter/e3dchem/knime/plants/default.png"
-             id="plants_screening_results_reader"
-             name="PLANTS Screening results reader"
-             workflowDir="src/knime/PLANTS-screening-results-reader">
+             id="PLANTS-screen"
+             name="PLANTS virtual screening"
+             workflowDir="src/knime/PLANTS-screen">
         </PersistedMetaNode>
         
         <PersistedMetaNode
               category-path="/community/3d-e-chem/plants"
               expert-flag="false"
               icon="nl/esciencecenter/e3dchem/knime/plants/default.png"
-              id="plants bindingsite reader"
-              name="PLANTS Binding site reader"
-              workflowDir="src/knime/PLANTS-bindingsite-reader/">
+              id="PLANTS-screen-results-reader"
+              name="PLANTS virtual screening results reader"
+              workflowDir="src/knime/PLANTS-screen-results-reader/">
+        </PersistedMetaNode>
+
+        <PersistedMetaNode
+              category-path="/community/3d-e-chem/plants"
+              expert-flag="false"
+              icon="nl/esciencecenter/e3dchem/knime/plants/default.png"
+              id="PLANTS-session-builder"
+              name="PLANTS session builder"
+              workflowDir="src/knime/PLANTS-session-builder/">
         </PersistedMetaNode>
     </extension>
     <extension
