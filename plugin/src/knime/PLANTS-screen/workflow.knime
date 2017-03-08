@@ -9,7 +9,7 @@
 <entry key="lastEdited-by" type="xstring" isnull="true" value=""/>
 <entry key="lastEdited-when" type="xstring" isnull="true" value=""/>
 </config>
-<entry key="customDescription" type="xstring" value="&lt;p&gt;Metanode which execute PLANTS in a session directory.&lt;/p&gt;%%00013%%00010Port 0 should have a single row with the following columns:%%00013%%00010&lt;ul&gt;%%00013%%00010&lt;li&gt;session_dir: Directory name of session as a string&lt;/li&gt;%%00013%%00010&lt;li&gt;config_filename: Filename of PLANTS configuration file inside session_dir directory as a string&lt;/li&gt;%%00010&lt;li&gt;plants_mode: Mode for PLANTS executable as  a string. For example 'screen'.&lt;/li&gt;%%00010&lt;li&gt;plants_executable: Path of PLANTS executable as  a string&lt;/li&gt;%%00013%%00010&lt;/ul&gt;%%00013%%00010"/>
+<entry key="customDescription" type="xstring" value="&lt;p&gt;Metanode which execute PLANTS in a session directory.&lt;/p&gt;%%00013%%00010Port 0 should have the following columns:%%00013%%00010&lt;ul&gt;%%00013%%00010&lt;li&gt;session_dir: Directory name of session as a string&lt;/li&gt;%%00013%%00010&lt;li&gt;config_filename: Filename of PLANTS configuration file inside session_dir directory as a string&lt;/li&gt;%%00010&lt;li&gt;plants_mode: Mode for PLANTS executable as  a string. For example 'screen'.&lt;/li&gt;%%00010&lt;li&gt;plants_executable: Path of PLANTS executable as  a string&lt;/li&gt;%%00013%%00010&lt;/ul&gt;%%00013%%00010 "/>
 <entry key="state" type="xstring" value="IDLE"/>
 <config key="workflow_credentials"/>
 <config key="nodes">
@@ -31,7 +31,7 @@
 </config>
 <config key="node_40">
 <entry key="id" type="xint" value="40"/>
-<entry key="node_settings_file" type="xstring" value="PLANTS Runner (#40)/settings.xml"/>
+<entry key="node_settings_file" type="xstring" value="PLANTS runner (#40)/settings.xml"/>
 <entry key="node_is_meta" type="xboolean" value="false"/>
 <entry key="node_type" type="xstring" value="NativeNode"/>
 <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -40,7 +40,7 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="584"/>
 <entry key="1" type="xint" value="277"/>
-<entry key="2" type="xint" value="102"/>
+<entry key="2" type="xint" value="97"/>
 <entry key="3" type="xint" value="79"/>
 </config>
 </config>
