@@ -20,7 +20,7 @@
 <config key="nodeAnnotation">
 <entry key="text" type="xstring" value="Node 55"/>
 <entry key="bgcolor" type="xint" value="16777215"/>
-<entry key="x-coordinate" type="xint" value="703"/>
+<entry key="x-coordinate" type="xint" value="723"/>
 <entry key="y-coordinate" type="xint" value="719"/>
 <entry key="width" type="xint" value="115"/>
 <entry key="height" type="xint" value="16"/>

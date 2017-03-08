@@ -7,7 +7,7 @@
 </config>
 <config key="model">
 <entry key="addIterationColumn" type="xboolean" value="false"/>
-<entry key="rowKeyPolicy" type="xstring" value="UNMODIFIED"/>
+<entry key="rowKeyPolicy" type="xstring" value="APPEND_SUFFIX"/>
 <entry key="ignoreEmptyTables" type="xboolean" value="true"/>
 <entry key="tolerateColumnTypes" type="xboolean" value="false"/>
 <entry key="tolerateChangingSpecs" type="xboolean" value="false"/>

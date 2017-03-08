@@ -9,7 +9,7 @@
 <entry key="lastEdited-by" type="xstring" isnull="true" value=""/>
 <entry key="lastEdited-when" type="xstring" isnull="true" value=""/>
 </config>
-<entry key="customDescription" type="xstring" value="&lt;p&gt;Metanode which reads results of a PLANTS virtual screening. &lt;/p&gt;%%00013%%00010Port 0 should have a single row with the following columns:%%00013%%00010&lt;ul&gt;%%00013%%00010&lt;li&gt;abs_output_dir: Directory name with PLANTS virtual screening results as a string&lt;/li&gt;%%00013%%00010&lt;/ul&gt;%%00013%%00010"/>
+<entry key="customDescription" type="xstring" value="&lt;p&gt;Metanode which reads results of a PLANTS virtual screening. &lt;/p&gt;%%00013%%00010Port 0 should have the following columns:%%00013%%00010&lt;ul&gt;%%00013%%00010&lt;li&gt;results_dir: Directory name with PLANTS virtual screening results as a string&lt;/li&gt;%%00013%%00010&lt;/ul&gt;%%00013%%00010"/>
 <entry key="state" type="xstring" value="IDLE"/>
 <config key="workflow_credentials"/>
 <config key="nodes">
@@ -134,7 +134,7 @@
 <config key="ui_settings">
 <config key="extrainfo.node.bounds">
 <entry key="array-size" type="xint" value="4"/>
-<entry key="0" type="xint" value="644"/>
+<entry key="0" type="xint" value="664"/>
 <entry key="1" type="xint" value="537"/>
 <entry key="2" type="xint" value="113"/>
 <entry key="3" type="xint" value="79"/>
@@ -182,7 +182,7 @@
 <config key="ui_settings">
 <config key="extrainfo.node.bounds">
 <entry key="array-size" type="xint" value="4"/>
-<entry key="0" type="xint" value="744"/>
+<entry key="0" type="xint" value="764"/>
 <entry key="1" type="xint" value="657"/>
 <entry key="2" type="xint" value="113"/>
 <entry key="3" type="xint" value="79"/>
@@ -230,7 +230,7 @@
 <config key="ui_settings">
 <config key="extrainfo.node.bounds">
 <entry key="array-size" type="xint" value="4"/>
-<entry key="0" type="xint" value="844"/>
+<entry key="0" type="xint" value="864"/>
 <entry key="1" type="xint" value="757"/>
 <entry key="2" type="xint" value="50"/>
 <entry key="3" type="xint" value="79"/>
@@ -246,7 +246,7 @@
 <config key="ui_settings">
 <config key="extrainfo.node.bounds">
 <entry key="array-size" type="xint" value="4"/>
-<entry key="0" type="xint" value="524"/>
+<entry key="0" type="xint" value="504"/>
 <entry key="1" type="xint" value="417"/>
 <entry key="2" type="xint" value="50"/>
 <entry key="3" type="xint" value="79"/>
@@ -282,6 +282,22 @@
 <entry key="1" type="xint" value="757"/>
 <entry key="2" type="xint" value="58"/>
 <entry key="3" type="xint" value="79"/>
+</config>
+</config>
+</config>
+<config key="node_63">
+<entry key="id" type="xint" value="63"/>
+<entry key="node_settings_file" type="xstring" value="Variable to Table Column (#63)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="584"/>
+<entry key="1" type="xint" value="417"/>
+<entry key="2" type="xint" value="85"/>
+<entry key="3" type="xint" value="95"/>
 </config>
 </config>
 </config>
@@ -385,9 +401,9 @@
 </config>
 <config key="connection_16">
 <entry key="sourceID" type="xint" value="60"/>
-<entry key="destID" type="xint" value="52"/>
+<entry key="destID" type="xint" value="63"/>
 <entry key="sourcePort" type="xint" value="1"/>
-<entry key="destPort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="2"/>
 </config>
 <config key="connection_17">
 <entry key="sourceID" type="xint" value="61"/>
@@ -414,10 +430,36 @@
 <entry key="destPort" type="xint" value="0"/>
 </config>
 <config key="connection_21">
+<entry key="sourceID" type="xint" value="61"/>
+<entry key="destID" type="xint" value="63"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.ConnectionUIInformation"/>
+<config key="ui_settings">
+<entry key="extrainfo.conn.bendpoints_size" type="xint" value="2"/>
+<config key="extrainfo.conn.bendpoints_0">
+<entry key="array-size" type="xint" value="2"/>
+<entry key="0" type="xint" value="344"/>
+<entry key="1" type="xint" value="398"/>
+</config>
+<config key="extrainfo.conn.bendpoints_1">
+<entry key="array-size" type="xint" value="2"/>
+<entry key="0" type="xint" value="546"/>
+<entry key="1" type="xint" value="399"/>
+</config>
+</config>
+</config>
+<config key="connection_22">
 <entry key="sourceID" type="xint" value="62"/>
 <entry key="destID" type="xint" value="-1"/>
 <entry key="sourcePort" type="xint" value="1"/>
 <entry key="destPort" type="xint" value="0"/>
+</config>
+<config key="connection_23">
+<entry key="sourceID" type="xint" value="63"/>
+<entry key="destID" type="xint" value="52"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
 </config>
 </config>
 <config key="meta_in_ports">
@@ -445,10 +487,10 @@
 </config>
 </config>
 <config key="workflow_editor_settings">
-<entry key="workflow.editor.snapToGrid" type="xboolean" value="false"/>
-<entry key="workflow.editor.ShowGrid" type="xboolean" value="false"/>
-<entry key="workflow.editor.gridX" type="xint" value="-1"/>
-<entry key="workflow.editor.gridY" type="xint" value="-1"/>
+<entry key="workflow.editor.snapToGrid" type="xboolean" value="true"/>
+<entry key="workflow.editor.ShowGrid" type="xboolean" value="true"/>
+<entry key="workflow.editor.gridX" type="xint" value="20"/>
+<entry key="workflow.editor.gridY" type="xint" value="20"/>
 <entry key="workflow.editor.zoomLevel" type="xdouble" value="1.0"/>
 <entry key="workflow.editor.curvedConnections" type="xboolean" value="false"/>
 <entry key="workflow.editor.connectionWidth" type="xint" value="1"/>
