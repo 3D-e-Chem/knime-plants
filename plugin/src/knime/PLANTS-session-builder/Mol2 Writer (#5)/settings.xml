@@ -32,6 +32,10 @@
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="IDLE"/>
+<config key="nodecontainer_message">
+<entry key="type" type="xstring" value="WARNING"/>
+<entry key="message" type="xstring" value="No destination location provided! Please enter a valid location."/>
+</config>
 <entry key="factory" type="xstring" value="org.knime.chem.base.node.io.mol2.Mol2WriterNodeFactory"/>
 <entry key="node-name" type="xstring" value="Mol2 Writer"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Chemistry Base nodes"/>
