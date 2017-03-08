@@ -49,11 +49,23 @@
 </config>
 <config key="Variable_8">
 <entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="URL"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value=""/>
+</config>
+<config key="Variable_9">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="Location"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value=""/>
+</config>
+<config key="Variable_10">
+<entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="maxIterations"/>
 <entry key="class" type="xstring" value="INTEGER"/>
 <entry key="value" type="xint" value="0"/>
 </config>
-<config key="Variable_9">
+<config key="Variable_11">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="currentIteration"/>
 <entry key="class" type="xstring" value="INTEGER"/>

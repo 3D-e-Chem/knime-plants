@@ -9,7 +9,7 @@
 <entry key="lastEdited-by" type="xstring" isnull="true" value=""/>
 <entry key="lastEdited-when" type="xstring" isnull="true" value=""/>
 </config>
-<entry key="customDescription" type="xstring" value="PLANTS Bidingsite definition by ligand or pocket.%%00010%%00010Requires the following input columns:%%00010&lt;ol&gt;%%00010&lt;li&gt;named Molecule, type Mol2, with ligand molecule or pocket atoms of a protein&lt;/li&gt;%%00010&lt;li&gt;named bindingsite_additional_distance, type double, with additional distance around sphere radius%%00010&lt;/ol&gt;"/>
+<entry key="customDescription" type="xstring" value="PLANTS Bindingsite definition by ligand or pocket.%%00010%%00010Requires the following input columns:%%00010&lt;ol&gt;%%00010&lt;li&gt;named Molecule, type Mol2, with ligand molecule or pocket atoms of a protein&lt;/li&gt;%%00010&lt;li&gt;named bindingsite_additional_distance, type double, with additional distance around sphere radius%%00010&lt;/ol&gt; "/>
 <entry key="state" type="xstring" value="IDLE"/>
 <config key="workflow_credentials"/>
 <config key="nodes">
@@ -24,7 +24,7 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="224"/>
 <entry key="1" type="xint" value="77"/>
-<entry key="2" type="xint" value="95"/>
+<entry key="2" type="xint" value="86"/>
 <entry key="3" type="xint" value="95"/>
 </config>
 </config>
@@ -40,7 +40,7 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="624"/>
 <entry key="1" type="xint" value="317"/>
-<entry key="2" type="xint" value="137"/>
+<entry key="2" type="xint" value="97"/>
 <entry key="3" type="xint" value="79"/>
 </config>
 </config>
@@ -56,7 +56,7 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="504"/>
 <entry key="1" type="xint" value="77"/>
-<entry key="2" type="xint" value="85"/>
+<entry key="2" type="xint" value="81"/>
 <entry key="3" type="xint" value="95"/>
 </config>
 </config>
@@ -72,8 +72,8 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="604"/>
 <entry key="1" type="xint" value="77"/>
-<entry key="2" type="xint" value="114"/>
-<entry key="3" type="xint" value="95"/>
+<entry key="2" type="xint" value="119"/>
+<entry key="3" type="xint" value="79"/>
 </config>
 </config>
 </config>
@@ -104,8 +104,8 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="744"/>
 <entry key="1" type="xint" value="77"/>
-<entry key="2" type="xint" value="114"/>
-<entry key="3" type="xint" value="95"/>
+<entry key="2" type="xint" value="119"/>
+<entry key="3" type="xint" value="79"/>
 </config>
 </config>
 </config>
@@ -120,7 +120,7 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="364"/>
 <entry key="1" type="xint" value="77"/>
-<entry key="2" type="xint" value="116"/>
+<entry key="2" type="xint" value="81"/>
 <entry key="3" type="xint" value="79"/>
 </config>
 </config>
@@ -136,7 +136,7 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="664"/>
 <entry key="1" type="xint" value="477"/>
-<entry key="2" type="xint" value="116"/>
+<entry key="2" type="xint" value="81"/>
 <entry key="3" type="xint" value="79"/>
 </config>
 </config>
@@ -152,7 +152,7 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="804"/>
 <entry key="1" type="xint" value="477"/>
-<entry key="2" type="xint" value="118"/>
+<entry key="2" type="xint" value="83"/>
 <entry key="3" type="xint" value="79"/>
 </config>
 </config>
@@ -184,8 +184,8 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="344"/>
 <entry key="1" type="xint" value="477"/>
-<entry key="2" type="xint" value="114"/>
-<entry key="3" type="xint" value="95"/>
+<entry key="2" type="xint" value="119"/>
+<entry key="3" type="xint" value="79"/>
 </config>
 </config>
 </config>
