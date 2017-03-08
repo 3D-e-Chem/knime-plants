@@ -76,8 +76,6 @@ public class RunNodeModel extends NodeModel {
 
 	private void process(DataRow inRow, List<String> commands, File workingDirectory, BufferedDataContainer container)
 			throws IOException, InterruptedException {
-		this.getLogger().warn(commands);
-		this.getLogger().warn(workingDirectory);
 		Process process = new ProcessBuilder(commands).directory(workingDirectory).inheritIO().start();
 		int exitCode = process.waitFor();
 		DataCell cell = new IntCell(exitCode);

@@ -5,11 +5,21 @@ The file is formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
-## Added
+## [0.2.0] 2017-03-08
+
+### Added
 
 * Metanode to read PLANTS configuration file
 * Metanode to execute PLANTS (#3)
 * Metanode to read PLANTS virtual screening results (#4)
+
+### Changed
+
+* All nodes can be run with multiple input rows
+
+### Fixed
+
+* PLANTS executable in preference page is not adjustable (#7)
 
 ## [0.0.13] 2016-12-13
 
