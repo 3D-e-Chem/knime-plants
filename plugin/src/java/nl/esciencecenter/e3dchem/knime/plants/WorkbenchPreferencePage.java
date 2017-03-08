@@ -1,7 +1,5 @@
 package nl.esciencecenter.e3dchem.knime.plants;
 
-import java.io.IOException;
-
 import org.eclipse.jface.preference.FieldEditorPreferencePage;
 import org.eclipse.jface.preference.StringFieldEditor;
 import org.eclipse.ui.IWorkbench;
@@ -19,26 +17,7 @@ public class WorkbenchPreferencePage extends FieldEditorPreferencePage implement
 
 	@Override
 	protected void createFieldEditors() {
-		executableField = new StringFieldEditor("EXECUTABLE", "Path of PLANTS executable", getFieldEditorParent());
+		executableField = new ExecutableFieldEditor("EXECUTABLE", "Path of PLANTS executable", false, getFieldEditorParent());
 		addField(executableField);
-	}
-
-	@Override
-	protected void checkState() {
-		super.checkState();
-		if (executableField.getStringValue() != null
-                && executableField.getStringValue().length() > 0) {
-			try {
-				new ProcessBuilder().command(executableField.getStringValue()).start().waitFor();
-				setValid(true);
-				setErrorMessage(null);
-			} catch (IOException e) {
-				setValid(false);
-				setErrorMessage(e.getMessage());
-			} catch (InterruptedException e) {
-				setValid(false);
-				setErrorMessage(e.getMessage());
-			} 
-		}
 	}
 }
