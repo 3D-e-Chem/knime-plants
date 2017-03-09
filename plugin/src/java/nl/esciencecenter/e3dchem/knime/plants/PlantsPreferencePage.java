@@ -5,7 +5,8 @@ import org.eclipse.jface.preference.StringFieldEditor;
 import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.IWorkbenchPreferencePage;
 
-public class WorkbenchPreferencePage extends FieldEditorPreferencePage implements IWorkbenchPreferencePage {
+public class PlantsPreferencePage extends FieldEditorPreferencePage implements IWorkbenchPreferencePage {
+	public static final String PLANTS_EXECUTABLE = "PLANTS_EXECUTABLE";
 
 	private StringFieldEditor executableField;
 
@@ -17,7 +18,7 @@ public class WorkbenchPreferencePage extends FieldEditorPreferencePage implement
 
 	@Override
 	protected void createFieldEditors() {
-		executableField = new ExecutableFieldEditor("EXECUTABLE", "Path of PLANTS executable", false, getFieldEditorParent());
+		executableField = new ExecutableFieldEditor(PLANTS_EXECUTABLE, "Path of PLANTS executable", false, getFieldEditorParent());
 		addField(executableField);
 	}
 }

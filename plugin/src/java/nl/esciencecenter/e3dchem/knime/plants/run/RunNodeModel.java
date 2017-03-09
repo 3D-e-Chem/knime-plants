@@ -25,6 +25,7 @@ import org.knime.core.node.NodeSettingsRO;
 import org.knime.core.node.NodeSettingsWO;
 
 import nl.esciencecenter.e3dchem.knime.plants.Activator;
+import nl.esciencecenter.e3dchem.knime.plants.PlantsPreferencePage;
 
 public class RunNodeModel extends NodeModel {
 	private RunNodeConfig config = new RunNodeConfig();
@@ -42,7 +43,7 @@ public class RunNodeModel extends NodeModel {
 
 	@Override
 	protected BufferedDataTable[] execute(BufferedDataTable[] inData, ExecutionContext exec) throws Exception {
-		String executable = Activator.getDefault().getPreferenceStore().getString("EXECUTABLE");
+		String executable = Activator.getDefault().getPreferenceStore().getString(PlantsPreferencePage.PLANTS_EXECUTABLE);
 		BufferedDataTable inTable = inData[0];
 		DataTableSpec inSpec = inTable.getSpec();
 		int modeIndex = inSpec.findColumnIndex(config.modeColumn.getStringValue());

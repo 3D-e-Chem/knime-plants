@@ -7,8 +7,7 @@ public class PreferenceInitializer extends AbstractPreferenceInitializer {
 
 	@Override
 	public void initializeDefaultPreferences() {
-		// TODO Auto-generated method stub
 		IPreferenceStore store = Activator.getDefault().getPreferenceStore();
-        store.setDefault("EXECUTABLE", "PLANTS_static");
+        store.setDefault(PlantsPreferencePage.PLANTS_EXECUTABLE, "PLANTS_static");
 	}
 }

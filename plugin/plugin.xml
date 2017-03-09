@@ -78,7 +78,7 @@
           point="org.eclipse.ui.preferencePages">
        <page
              category="org.knime.workbench.ui.preferences"
-             class="nl.esciencecenter.e3dchem.knime.plants.WorkbenchPreferencePage"
+             class="nl.esciencecenter.e3dchem.knime.plants.PlantsPreferencePage"
              id="nl.esciencecenter.e3dchem.knime.plants.page"
              name="PLANTS">
        </page>

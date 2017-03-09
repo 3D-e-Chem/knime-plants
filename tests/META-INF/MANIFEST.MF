@@ -12,3 +12,4 @@ Require-Bundle: org.junit;bundle-version="4.12.0",
  nl.esciencecenter.e3dchem.knime.plants.plugin
 Bundle-Vendor: Netherlands eScience Center
 Bundle-ClassPath: .
+Import-Package: org.eclipse.jface.preference, org.eclipse.ui.plugin 
