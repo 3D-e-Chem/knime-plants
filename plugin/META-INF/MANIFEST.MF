@@ -19,4 +19,5 @@ Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .,
  libs/mustache.java-compiler-0.9.4.jar
 Export-Package: nl.esciencecenter.e3dchem.knime.plants,
- nl.esciencecenter.e3dchem.knime.plants.configure
+ nl.esciencecenter.e3dchem.knime.plants.configure,
+ nl.esciencecenter.e3dchem.knime.plants.run
