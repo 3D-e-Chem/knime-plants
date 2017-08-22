@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: PLANTS
+Bundle-Name: KNIME nodes for PLANTS
 Bundle-SymbolicName: nl.esciencecenter.e3dchem.knime.plants.plugin;singleton:=true
 Bundle-Version: 0.2.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
@@ -21,3 +21,4 @@ Bundle-ClassPath: .,
 Export-Package: nl.esciencecenter.e3dchem.knime.plants,
  nl.esciencecenter.e3dchem.knime.plants.configure,
  nl.esciencecenter.e3dchem.knime.plants.run
+Eclipse-PlatformFilter: (& (osgi.arch=x86_64) (| (osgi.os=macosx) (osgi.os=linux) (osgi.os=win32)))

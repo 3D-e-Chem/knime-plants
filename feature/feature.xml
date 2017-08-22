@@ -233,4 +233,30 @@ http://www.apache.org/licenses/
          version="0.0.0"
          unpack="false"/>
 
-</feature>
+   <plugin
+         id="nl.esciencecenter.e3dchem.knime.plants.bin.linux"
+         os="linux"
+         arch="x86_64"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"/>
+
+   <plugin
+         id="nl.esciencecenter.e3dchem.knime.plants.bin.macosx"
+         os="macosx"
+         arch="x86_64"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"/>
+
+   <plugin
+         id="nl.esciencecenter.e3dchem.knime.plants.bin.windows"
+         os="win32"
+         arch="x86_64"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"/>
+ </feature>

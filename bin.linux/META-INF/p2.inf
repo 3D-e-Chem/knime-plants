@@ -1,0 +1,2 @@
+instructions.install=\
+    org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:bin/PLANTS,permissions:755);\
