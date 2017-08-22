@@ -13,8 +13,12 @@
       Copyright Netherlands eScience Center 2015
    </copyright>
 
-   <license url="https://www.apache.org/licenses/LICENSE-2.0.txt">
-      Apache License
+   <license url="">
+      Included in PLANTS nodes plugin is the PLANTS executable with academic license (http://www.mnf.uni-tuebingen.de/fachbereiche/pharmazie-und-biochemie/pharmazie/pharmazeutische-chemie/pd-dr-t-exner/research/plants.html). 
+By accepting this license agreement, you agree to use the included PLANTS executable only for academic usage.
+To use these nodes in a commercial manner you need to acquire a valid license yourself and configure the PLANTS node to use the commercial executable.
+
+Apache License
 Version 2.0, January 2004
 http://www.apache.org/licenses/
 
