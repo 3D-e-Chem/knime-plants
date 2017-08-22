@@ -15,6 +15,6 @@ public class PreferenceInitializerTest {
 
 		String path = store.getString(PlantsPreferencePage.PLANTS_EXECUTABLE);
 
-		assertTrue(path.startsWith("PLANTS"));
+        assertTrue(path.contains("PLANTS"));
 	}
 }

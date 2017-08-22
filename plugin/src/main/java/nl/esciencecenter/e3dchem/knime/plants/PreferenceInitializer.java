@@ -30,6 +30,9 @@ public class PreferenceInitializer extends AbstractPreferenceInitializer {
 		Bundle bundle = Platform.getBundle(Activator.PLUGIN_ID);
 		try {
             URL url = FileLocator.find(bundle, new Path(path), null);
+            if (url == null) {
+                return "";
+            }
             return FileLocator.toFileURL(url).getPath();
 		} catch (IOException e) {
 			return "";
