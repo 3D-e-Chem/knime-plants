@@ -7,15 +7,15 @@ import org.knime.core.node.defaultnodesettings.DialogComponentColumnNameSelectio
 
 public class RunNodeDialog extends DefaultNodeSettingsPane {
 
-	public RunNodeDialog() {
+    @SuppressWarnings("unchecked")
+    public RunNodeDialog() {
 		super();
 		RunNodeConfig config = new RunNodeConfig();
 
-		addDialogComponent(new DialogComponentColumnNameSelection(config.modeColumn, "Mode", 0, StringValue.class));
+        addDialogComponent(new DialogComponentColumnNameSelection(config.getModeColumn(), "Mode", 0, StringValue.class));
 		addDialogComponent(
-				new DialogComponentColumnNameSelection(config.argumentsColumn, "Arguments", 0, ListDataValue.class));
-		addDialogComponent(new DialogComponentColumnNameSelection(config.workingDirectoryColumn, "Working directory", 0,
+                new DialogComponentColumnNameSelection(config.getArgumentsColumn(), "Arguments", 0, ListDataValue.class));
+        addDialogComponent(new DialogComponentColumnNameSelection(config.getWorkingDirectoryColumn(), "Working directory", 0,
 				StringValue.class));
 	}
-
 }

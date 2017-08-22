@@ -8,8 +8,6 @@ import org.eclipse.ui.IWorkbenchPreferencePage;
 public class PlantsPreferencePage extends FieldEditorPreferencePage implements IWorkbenchPreferencePage {
 	public static final String PLANTS_EXECUTABLE = "PLANTS_EXECUTABLE";
 
-	private StringFieldEditor executableField;
-
 	@Override
 	public void init(IWorkbench workbench) {
 		setPreferenceStore(Activator.getDefault().getPreferenceStore());
@@ -18,7 +16,8 @@ public class PlantsPreferencePage extends FieldEditorPreferencePage implements I
 
 	@Override
 	protected void createFieldEditors() {
-		executableField = new ExecutableFieldEditor(PLANTS_EXECUTABLE, "Path of PLANTS executable", false, getFieldEditorParent());
+        StringFieldEditor executableField = new ExecutableFieldEditor(PLANTS_EXECUTABLE, "Path of PLANTS executable", false,
+                getFieldEditorParent());
 		addField(executableField);
 	}
 }

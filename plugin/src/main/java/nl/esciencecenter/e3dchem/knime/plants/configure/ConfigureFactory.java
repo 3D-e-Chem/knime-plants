@@ -46,7 +46,6 @@ public class ConfigureFactory
 
 	@Override
 	public NodeView<ConfigureModel> createNodeView(int viewIndex, ConfigureModel nodeModel) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

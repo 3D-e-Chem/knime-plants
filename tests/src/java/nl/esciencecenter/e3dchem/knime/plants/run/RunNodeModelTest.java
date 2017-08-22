@@ -15,6 +15,7 @@ import org.knime.core.data.DataRow;
 import org.knime.core.data.RowKey;
 import org.knime.core.data.def.DefaultRow;
 import org.knime.core.data.def.IntCell;
+import org.knime.core.data.def.StringCell;
 
 public class RunNodeModelTest {
 	@Rule
@@ -33,8 +34,9 @@ public class RunNodeModelTest {
 
 		DataRow row = node.process(rowKey, workingDirectory, executable, mode, arguments);
 		
-		DefaultRow expected = new DefaultRow(rowKey, new IntCell(0));
+        String sep = System.getProperty("line.separator");
+        DefaultRow expected = new DefaultRow(rowKey, new IntCell(0), new StringCell("--mode bind arg1 arg2" + sep),
+                new StringCell(""));
 		assertEquals(expected, row);
 	}
-
 }

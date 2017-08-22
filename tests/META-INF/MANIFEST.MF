@@ -8,6 +8,7 @@ Require-Bundle: org.junit;bundle-version="4.12.0",
  org.knime.core;bundle-version="[3.3.0,4.0.0)",
  org.knime.base;bundle-version="[3.3.0,4.0.0)",
  org.knime.testing;bundle-version="[3.3.0,4.0.0)",
+ org.knime.jsnippets;bundle-version="[3.3.0,4.0.0)",
  nl.esciencecenter.e3dchem.knime.testing.plugin;bundle-version="[1.0.0,2.0.0)",
  nl.esciencecenter.e3dchem.knime.plants.plugin
 Bundle-Vendor: Netherlands eScience Center

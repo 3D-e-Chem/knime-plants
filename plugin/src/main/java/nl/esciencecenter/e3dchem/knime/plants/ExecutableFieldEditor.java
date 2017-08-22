@@ -26,6 +26,8 @@ public class ExecutableFieldEditor extends FileFieldEditor {
 				return false;
 			} catch (InterruptedException e) {
 				showErrorMessage(e.getMessage());
+                // Restore interrupted state...
+                Thread.currentThread().interrupt();
 				return false;
 			}
 		} else {
