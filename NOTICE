@@ -1,3 +1,16 @@
 Included in PLANTS nodes plugin is the PLANTS executable with academic license (http://www.mnf.uni-tuebingen.de/fachbereiche/pharmazie-und-biochemie/pharmazie/pharmazeutische-chemie/pd-dr-t-exner/research/plants.html). 
 By accepting this license agreement, you agree to use the included PLANTS executable only for academic usage.
 To use these nodes in a commercial manner you need to acquire a valid license yourself and configure the PLANTS node to use the commercial executable.
+
+CITATION
+
+Any published work arising from the use of the PLANTS software must acknowledge the program with an appropriate citation.
+
+1)	Korb, O.; Stützle, T.; Exner, T. E. "PLANTS: Application of Ant Colony Optimization to Structure-Based Drug Design" Lecture Notes in Computer Science 4150, 247-258 (2006).
+2)	Korb, O.; Stützle, T.; Exner, T. E. "An ant colony optimization approach to flexible protein-ligand docking" Swarm Intell. 1, 115-134 (2007).
+3)	Korb, O.; Stützle, T.; Exner, T. E. "Empirical Scoring Functions for Advanced Protein-Ligand Docking with PLANTS" J.Chem.Inf.Model. 49, 84-96 (2009).
+4)	ten Brink, T.; Exner, T. E. "The Influence of Protonation States on Protein-Ligand Docking Results" J.Chem.Inf.Model. 49, 1535-1546 (2009).
+5)	Korb, O.; Monecke, P.; Hessler, G.; Stützle, T.; Exner, T. E. "pharmACOphore: Multiple Flexible Ligand Alignment Based on Ant Colony Optimization" J.Chem.Inf.Model. DOI: 10.1021/ci1000218, (2010).
+6)	ten Brink, T.; Exner, T. E. "pKa Based Protonation States and Microspecies for Protein-Ligand Docking" J.Comput.Aided Mol.Des. 24, 935-942 (2010).
+7)	Korb, O.; Möller, H.; Exner, T. E. "NMR-guided Molecular Docking of a Protein-Peptide Complex Based on Ant Colony Optimization" ChemMedChem 5, 1001-1006 (2010).
+8)	Hessler, G., Korb, O., Monecke, P., Stützle, T., and Exner, T. E. "pharmACOphore: multiple flexible ligand alignment based on ant colony optimization" J.Cheminform. 2 (Suppl. I),P17 (2010).

@@ -9,11 +9,10 @@ matrix:
    - mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN
  - os: osx
    osx_image: xcode8.2
+   before_install: export JAVA_HOME=$(/usr/libexec/java_home)
    script: Xvfb :5009 & export DISPLAY=:5009 && mvn verify -B
-before_install:
-  - if [ "$TRAVIS_OS_NAME" == "osx" ]; then export JAVA_HOME=$(/usr/libexec/java_home); fi
 before_cache:
-  - rm -fr $HOME/.m2/repository/nl/esciencecenter/e3dchem/knime/silicosit
+  - rm -fr $HOME/.m2/repository/nl/esciencecenter/e3dchem/knime/plants
 cache:
   directories:
    - $HOME/.m2

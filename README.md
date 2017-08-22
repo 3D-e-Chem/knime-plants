@@ -4,9 +4,10 @@ KNIME nodes to configure, run and analyze PLANTS protein-ligand docking
 
 PLANTS homepage at http://www.mnf.uni-tuebingen.de/fachbereiche/pharmazie-und-biochemie/pharmazie/pharmazeutische-chemie/pd-dr-t-exner/research/plants.html
 
-[![Build Status](https://travis-ci.org/3D-e-Chem/knime-plants.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-plants)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/74d1f7600e4c43cbab963d7f30963cee)](https://www.codacy.com/app/3D-e-Chem/knime-plants?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=3D-e-Chem/knime-plants&amp;utm_campaign=Badge_Grade)
-[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/74d1f7600e4c43cbab963d7f30963cee)](https://www.codacy.com/app/3D-e-Chem/knime-plants?utm_source=github.com&utm_medium=referral&utm_content=3D-e-Chem/knime-plants&utm_campaign=Badge_Coverage)
+[![Build Status Linux & OS X ](https://travis-ci.org/3D-e-Chem/knime-plants.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-plants)
+[![Build status Windows ](https://ci.appveyor.com/api/projects/status/wnwuac96jd7v76ri?svg=true)](https://ci.appveyor.com/project/3D-e-Chem/knime-plants)
+[![SonarQube Gate](https://sonarqube.com/api/badges/gate?key=nl.esciencecenter.e3dchem.knime.plants:nl.esciencecenter.e3dchem.knime.plants)](https://sonarqube.com/dashboard?id=nl.esciencecenter.e3dchem.knime.plants:nl.esciencecenter.e3dchem.knime.plants)
+[![SonarQube Coverage](https://sonarqube.com/api/badges/measure?key=nl.esciencecenter.e3dchem.knime.plants:nl.esciencecenter.e3dchem.knime.plants&metric=coverage)](https://sonarqube.com/component_measures/domain/Coverage?id=nl.esciencecenter.e3dchem.knime.plants:nl.esciencecenter.e3dchem.knime.plants)
 
 This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform build steps.
 
