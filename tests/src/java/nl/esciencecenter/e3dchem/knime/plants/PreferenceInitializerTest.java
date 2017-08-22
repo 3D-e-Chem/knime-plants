@@ -11,8 +11,10 @@ public class PreferenceInitializerTest {
 	public void testInitializeDefaultPreferences() {
 		PreferenceInitializer initializer = new PreferenceInitializer();
 		initializer.initializeDefaultPreferences();
-		
 		IPreferenceStore store = Activator.getDefault().getPreferenceStore();
-		assertEquals("PLANTS_static", store.getString(PlantsPreferencePage.PLANTS_EXECUTABLE));
+
+		String path = store.getString(PlantsPreferencePage.PLANTS_EXECUTABLE);
+
+		assertTrue(path.startsWith("PLANTS"));
 	}
 }

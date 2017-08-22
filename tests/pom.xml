@@ -110,6 +110,24 @@
 				<version>${tycho.version}</version>
 				<configuration>
 					<argLine>${tycho.testArgLine} ${tycho.test.jvmArgs}</argLine>
+					<useUIHarness>true</useUIHarness>
+					<useUIThread>${custom.UIThread}</useUIThread>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<dependency-resolution>
+						<extraRequirements>
+							<requirement>
+								<type>eclipse-feature</type>
+								<id>nl.esciencecenter.e3dchem.knime.plants.feature</id>
+								<versionRange>0.0.0</versionRange>
+							</requirement>
+						</extraRequirements>
+					</dependency-resolution>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -117,5 +135,24 @@
 	<properties>
 		<!-- kill test JVM if tests take more than 1 minute (60 seconds) to finish -->
 		<surefire.timeout>60</surefire.timeout>
+		<custom.UIThread>true</custom.UIThread>
+		<sonar.skip>true</sonar.skip>		
 	</properties>
+	<profiles>
+		<profile>
+			<id>macosx</id>
+			<activation>
+				<os>
+					<name>mac os x</name>
+					<family>mac</family>
+				</os>
+			</activation>
+			<properties>
+				<tycho.test.jvmArgs>-XstartOnFirstThread</tycho.test.jvmArgs>
+				<custom.UIThread>false</custom.UIThread>
+			</properties>
+			<build>
+			</build>
+		</profile>
+	</profiles>
 </project>
