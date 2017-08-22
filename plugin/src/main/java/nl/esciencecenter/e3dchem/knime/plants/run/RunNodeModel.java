@@ -2,7 +2,6 @@ package nl.esciencecenter.e3dchem.knime.plants.run;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -16,7 +15,6 @@ import org.knime.core.data.collection.ListCell;
 import org.knime.core.data.def.DefaultRow;
 import org.knime.core.data.def.IntCell;
 import org.knime.core.data.def.StringCell;
-import org.knime.core.data.def.StringCell.StringCellFactory;
 import org.knime.core.node.BufferedDataContainer;
 import org.knime.core.node.BufferedDataTable;
 import org.knime.core.node.CanceledExecutionException;
@@ -83,15 +81,15 @@ public class RunNodeModel extends NodeModel {
         for (String argument : arguments) {
             commands.add(argument);
         }
-        Process process = new ProcessBuilder(commands).directory(workingDirectory).start();
-        InputStream stdout = process.getInputStream();
-        InputStream stderr = process.getErrorStream();
+        File stderr = new File(workingDirectory, "stderr.txt");
+        File stdout = new File(workingDirectory, "stdout.txt");
+        Process process = new ProcessBuilder(commands).directory(workingDirectory).redirectError(stderr).redirectOutput(stdout)
+                .start();
         int exitCode = process.waitFor();
         if (exitCode != 0) {
             setWarningMessage("Some rows failed to run correctly");
         }
-        StringCellFactory factory = new StringCell.StringCellFactory();
-        return new DefaultRow(rowKey, new IntCell(exitCode), factory.createCell(stdout), factory.createCell(stderr));
+        return new DefaultRow(rowKey, new IntCell(exitCode));
     }
 
     @Override
@@ -125,8 +123,6 @@ public class RunNodeModel extends NodeModel {
     }
 
     private DataTableSpec createOutputSpec() {
-        return new DataTableSpec(new DataColumnSpecCreator("exit code", IntCell.TYPE).createSpec(),
-                new DataColumnSpecCreator("standard output", StringCell.TYPE).createSpec(),
-                new DataColumnSpecCreator("standard error", StringCell.TYPE).createSpec());
+        return new DataTableSpec(new DataColumnSpecCreator("exit code", IntCell.TYPE).createSpec());
     }
 }
