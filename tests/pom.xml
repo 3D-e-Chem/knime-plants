@@ -30,7 +30,7 @@
 				</executions>
 			</plugin>
 			<!-- the report goal of jacoco-maven-plugin plugin shows coverage of tests. 
-			  To get coverage of ../plugin/src/ use the jacoco ant reporter.
+			  To get coverage of ../plugin/src/main/java use the jacoco ant reporter.
 			  See https://intellectualcramps.wordpress.com/2012/03/22/jacoco-tycho-and-coverage-reports/
 			-->
 			<plugin>
@@ -78,12 +78,12 @@
 														<file file="${project.basedir}/target/jacoco.exec" />
 													</executiondata>
 
-													<structure name="knime-plants/plugin">
+													<structure name="plugin">
 														<classfiles>
 															<fileset dir="${source-location}/plugin/target/classes" />
 														</classfiles>
 														<sourcefiles encoding="UTF-8">
-															<fileset dir="${source-location}/plugin/src/java" />
+															<fileset dir="${source-location}/plugin/src/main/java" />
 														</sourcefiles>
 													</structure>
 													<html destdir="${project.basedir}/target/jacoco/report" />
@@ -136,7 +136,7 @@
 		<!-- kill test JVM if tests take more than 1 minute (60 seconds) to finish -->
 		<surefire.timeout>60</surefire.timeout>
 		<custom.UIThread>true</custom.UIThread>
-		<sonar.skip>true</sonar.skip>		
+		<sonar.skip>true</sonar.skip>
 	</properties>
 	<profiles>
 		<profile>

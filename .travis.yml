@@ -1,13 +1,21 @@
 sudo: false
 language: java
-jdk: oraclejdk8
+matrix:
+ include:
+ - os: linux
+   jdk: oraclejdk8
+   script:
+   - xvfb-run mvn verify -B
+   - mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN
+ - os: osx
+   osx_image: xcode8.2
+   script: Xvfb :5009 & export DISPLAY=:5009 && mvn verify -B
+before_install:
+  - if [ "$TRAVIS_OS_NAME" == "osx" ]; then export JAVA_HOME=$(/usr/libexec/java_home); fi
+before_cache:
+  - rm -fr $HOME/.m2/repository/nl/esciencecenter/e3dchem/knime/silicosit
 cache:
   directories:
    - $HOME/.m2
-   - $HOME/jpm
+   - $HOME/.sonar/cache
 install: mvn package -B
-script: xvfb-run mvn verify -B
-after_success:
-  - curl -sL https://github.com/jpm4j/jpm4j.installers/raw/master/dist/biz.aQute.jpm.run.jar > ~/.m2/jpm4j.jar
-  - java -jar $HOME/.m2/jpm4j.jar -u install com.codacy:codacy-coverage-reporter:assembly
-  - $HOME/jpm/bin/codacy-coverage-reporter -l Java -r tests/target/jacoco/report/jacoco.xml

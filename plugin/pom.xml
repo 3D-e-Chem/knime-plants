@@ -8,4 +8,7 @@
 	</parent>
 	<artifactId>nl.esciencecenter.e3dchem.knime.plants.plugin</artifactId>
 	<packaging>eclipse-plugin</packaging>
+	<properties>
+		<sonar.jacoco.reportPaths>../tests/target/jacoco.exec</sonar.jacoco.reportPaths>
+	</properties>
 </project>

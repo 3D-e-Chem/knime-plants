@@ -14,23 +14,27 @@ This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform bui
 
 Requirements:
 
-* KNIME, https://www.knime.org, version 3.1 or higher
+* KNIME, https://www.knime.org, version 3.3 or higher
 
-Steps to get the Configure KNIME node inside KNIME:
+Steps to get the PLANTS KNIME node inside KNIME:
 
 1. Goto Help > Install new software ... menu
 2. Press add button
-3. Fill text fields with https://3d-e-chem.github.io/updates which contains this node.
+3. Fill text fields with `https://3d-e-chem.github.io/updates`
 4. Select --all sites-- in `work with` pulldown
 5. Select the node
 6. Install software
-7. Restart Knime
+7. Restart KNIME
 
 # Usage
 
-1. Create a new Knime workflow.
+1. Create a new KNIME workflow.
 2. Find node in Node navigator panel.
 3. Drag node to workflow canvas.
+
+# Examples
+
+The `examples/` folder contains example KNIME workflows.
 
 # Build
 
@@ -38,8 +42,15 @@ Steps to get the Configure KNIME node inside KNIME:
 mvn verify
 ```
 
-An Eclipse update site will be made in `p2/target/repository` repository.
+An Eclipse update site will be made in `p2/target/repository` directory.
 The update site can be used to perform a local installation.
+
+## Continuous Integration
+
+Configuration files to run Continuous Integration builds on Linux (Travis-CI), OS X (Travis-CI) and Windows (AppVeyor) are present.
+
+See `./.travis.yml` file how to trigger a Travis-CI build for every push or pull request.
+See `./appveyor.yml` file how to run on https://www.appveyor.com .
 
 # Development
 
@@ -48,26 +59,41 @@ Steps to get development environment setup:
 1. Download KNIME SDK from https://www.knime.org/downloads/overview
 2. Install/Extract/start KNIME SDK
 3. Start SDK
-4. Install m2e (Maven integration for Eclipse) + KNIME Testing framework + Vernalis + External tool
+4. Install m2e (Maven integration for Eclipse) + KNIME Testing framework + Vernalis
 
     1. Goto Help > Install new software ...
-    2. Make sure Update site is http://update.knime.org/analytics-platform/3.1 is in the pull down list otherwise add it
+    2. Make sure Update site http://update.knime.org/analytics-platform/3.3 and https://3d-e-chem.github.io/updates are in the pull down list otherwise add them
     3. Select --all sites-- in work with pulldown
     4. Select m2e (Maven integration for Eclipse)
-    5. Select `KNIME Testing framework`
-    5. Select `Vernalis`
-    5. Select `External tool`
-    6. Install software & restart
+    5. Select `Test Knime workflows from a Junit test`
+    6. Select `Splash & node category for 3D-e-Chem KNIME nodes`
+    7. Select `Vernalis`
+    8. Install software & restart
 
 5. Import this repo as an Existing Maven project
 
 During import the Tycho Eclipse providers must be installed.
+
+## Meta nodes
+
+This plugin uses metanodes as it's public nodes. The are created in the following way:
+
+1. The meta nodes are first created and tested inside the example workflows in the `examples/` directory.
+2. The `name` and `customDescription` field inside `examples/**/workflow.knime` is filled.
+3. The examples are fully run and committed
+4. The meta nodes are internally completely reset, so we don't ship public nodes with example data in them.
+5. The meta nodes from the example workflows are then copied to the `plugin/src/knime/` directory.
+6. The meta nodes are added to the `plugin/plugin.xml` as PersistedMetaNode in the `org.knime.workbench.repository.metanode` extension.
+7. The examples are checked-out to their fully run state.
 
 ## Tests
 
 Tests for the node are in `tests/src` directory.
 Tests can be executed with `mvn verify`, they will be run in a separate KNIME environment.
 Test results will be written to `test/target/surefire-reports` directory.
+Code coverage reports (html+xml) can be found in the `tests/target/jacoco/report/` directory.
+
+There are no tests for the meta nodes as they are copied from the plugin to a workflow each time, which would make the test test itself.
 
 ### Unit tests
 
@@ -77,31 +103,24 @@ Unit tests written in Junit4 format can be put in `tests/src/java`.
 
 See https://github.com/3D-e-Chem/knime-testflow#3-add-test-workflow
 
+## Speed up builds
+
+Running mvn commands can take a long time as Tycho fetches indices of all p2 update sites.
+This can be skipped by running maven offline using `mvn -o`.
+
 # New release
 
 1. Update versions in pom files with `mvn org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=<version>-SNAPSHOT` command.
-2. Commit and push changes
-3. Create package with `mvn package`, will create update site in `p2/target/repository`
-4. Test node by installing it from local update site
+2. Create package with `mvn package`, will create update site in `p2/target/repository`
+3. Run tests with `mvn verify`
+4. Optionally, test node by installing it in KNIME from a local update site
 5. Append new release to an update site
   1. Make clone of an update site repo
   2. Append release to the update site with `mvn install -Dtarget.update.site=<path to update site>`
 6. Commit and push changes in this repo and update site repo.
 7. Create a GitHub release
-8. Make nodes available to 3D-e-Chem KNIME feature by following steps at https://github.com/3D-e-Chem/knime-node-collection#new-release
+8. Update Zenodo entry
+  1. Correct authors
+  2. Correct license
+9. Make nodes available to 3D-e-Chem KNIME feature by following steps at https://github.com/3D-e-Chem/knime-node-collection#new-release
 
-# License
-
-Copyright 2016 Netherlands eScience Center, Vrije Universiteit Amsterdam and Radboud University
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.

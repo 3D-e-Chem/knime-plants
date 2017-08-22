@@ -33,7 +33,7 @@
              icon="nl/esciencecenter/e3dchem/knime/plants/default.png"
              id="PLANTS-bindingsite"
              name="PLANTS bindingsite"
-             workflowDir="src/knime/PLANTS-bindingsite">
+             workflowDir="src/main/knime/PLANTS-bindingsite">
         </PersistedMetaNode>
 
         <PersistedMetaNode
@@ -43,7 +43,7 @@
              icon="nl/esciencecenter/e3dchem/knime/plants/default.png"
              id="PLANTS-configuration-reader"
              name="PLANTS configuration Reader"
-             workflowDir="src/knime/PLANTS-configuration-reader">
+             workflowDir="src/main/knime/PLANTS-configuration-reader">
         </PersistedMetaNode>
 
         <PersistedMetaNode
@@ -53,7 +53,7 @@
              icon="nl/esciencecenter/e3dchem/knime/plants/default.png"
              id="PLANTS-screen"
              name="PLANTS virtual screening"
-             workflowDir="src/knime/PLANTS-screen">
+             workflowDir="src/main/knime/PLANTS-screen">
         </PersistedMetaNode>
         
         <PersistedMetaNode
@@ -62,7 +62,7 @@
               icon="nl/esciencecenter/e3dchem/knime/plants/default.png"
               id="PLANTS-screen-results-reader"
               name="PLANTS virtual screening results reader"
-              workflowDir="src/knime/PLANTS-screen-results-reader/">
+              workflowDir="src/main/knime/PLANTS-screen-results-reader/">
         </PersistedMetaNode>
 
         <PersistedMetaNode
@@ -71,7 +71,7 @@
               icon="nl/esciencecenter/e3dchem/knime/plants/default.png"
               id="PLANTS-session-builder"
               name="PLANTS session builder"
-              workflowDir="src/knime/PLANTS-session-builder/">
+              workflowDir="src/main/knime/PLANTS-session-builder/">
         </PersistedMetaNode>
     </extension>
     <extension

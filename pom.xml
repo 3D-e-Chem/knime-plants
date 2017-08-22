@@ -27,7 +27,7 @@
 	</prerequisites>
 
 	<properties>
-		<knime.version>3.2</knime.version>
+		<knime.version>3.3</knime.version>
 		<knime.update.site>http://update.knime.org/analytics-platform/${knime.version}/</knime.update.site>
 		<tycho.version>1.0.0</tycho.version>
 		<tycho.extras.version>1.0.0</tycho.extras.version>
@@ -35,6 +35,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<tycho.scmUrl>scm:git:https://github.com/3D-e-Chem/knime-plants.git</tycho.scmUrl>
+		<sonar.host.url>https://sonarqube.com</sonar.host.url>
+		<sonar.organization>3d-e-chem</sonar.organization>
 	</properties>
 	<repositories>
 		<repository>
@@ -144,19 +146,6 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-	<profiles>
-		<profile>
-			<id>macosx</id>
-			<activation>
-				<os>
-					<family>mac</family>
-				</os>
-			</activation>
-			<properties>
-				<tycho.test.platformArgs>-XstartOnFirstThread</tycho.test.platformArgs>
-			</properties>
-		</profile>
-	</profiles>
 	<modules>
 		<module>plugin</module>
 		<module>feature</module>
