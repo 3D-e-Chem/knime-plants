@@ -31,15 +31,16 @@ public class ConfigureDialog extends DefaultNodeSettingsPane {
         this.createNewTab("Search algorithm");
         SettingsModelStringSet search_speed = config.search_speed;
         addDialogComponent(new DialogComponentStringSelection(search_speed, "Search speed", search_speed.getChoices()));
-//        addDialogComponent(new DialogComponentNumber(config.aco_ants, "Number of ants", 1));
+        addDialogComponent(new DialogComponentNumber(config.aco_ants, "Number of ants", 1));
 //        addDialogComponent(new DialogComponentNumber(config.aco_evap, "Evaporation factor", 0.1));
 //        addDialogComponent(new DialogComponentNumber(config.aco_sigma, "Iteration scaling factor", 0.1));
-//        addDialogComponent(new DialogComponentBoolean(config.flip_amide_bonds, "Flip amide bonds"));
-//        addDialogComponent(new DialogComponentBoolean(config.flip_planar_n, "Flip bonds next to planar nitrogens"));
-//        addDialogComponent(new DialogComponentBoolean(config.force_flipped_bonds_planarity, "Automatic planarity correction for flippable bonds"));
-//        addDialogComponent(new DialogComponentBoolean(config.force_planar_bond_rotation, "Free rotation of planar bonds"));
-//        addDialogComponent(new DialogComponentBoolean(config.rescore_mode, "Simplex optimization during rescoring"));
-//        addDialogComponent(new DialogComponentBoolean(config.flip_ring_corners, "Flip if free rubg corners"));
+        addDialogComponent(new DialogComponentBoolean(config.flip_amide_bonds, "Flip amide bonds"));
+        addDialogComponent(new DialogComponentBoolean(config.flip_planar_n, "Flip bonds next to planar nitrogens"));
+        addDialogComponent(new DialogComponentBoolean(config.force_flipped_bonds_planarity,
+                "Automatic planarity correction for flippable bonds"));
+        addDialogComponent(new DialogComponentBoolean(config.force_planar_bond_rotation, "Free rotation of planar bonds"));
+        addDialogComponent(new DialogComponentBoolean(config.rescore_simplex, "Simplex optimization during rescoring"));
+        addDialogComponent(new DialogComponentBoolean(config.flip_ring_corners, "Flip if free rubg corners"));
         
         this.createNewTab("Binding site");
         addDialogComponent(new DialogComponentNumber(config.bindingsite_center_x, "Center X", 1));
@@ -55,12 +56,14 @@ public class ConfigureDialog extends DefaultNodeSettingsPane {
         this.createNewGroup("Intermolecular (protein-ligand interaction scoring)");
         SettingsModelStringSet scoring_function = config.scoring_function;
         addDialogComponent(new DialogComponentStringSelection(scoring_function, "Scoring function", scoring_function.getChoices()));
-//        addDialogComponent(new DialogComponentNumber(config.outside_binding_site_penalty, "Using precalculated grids use value to fill grid points outside the binding site definition", 1));
-//        addDialogComponent(new DialogComponentBoolean(config.enable_sulphur_acceptors, "Sulphur acceptors"));
-//        this.createNewGroup("Intramolecular ligand scoring");
-//        addDialogComponent(new DialogComponentStringSelection(ligand_intra_score, "Ligand intra score", ligand_intra_score.getChoices()));
-//        addDialogComponent(new DialogComponentNumber(config.chemplp_clash_include_14, "Chemplp+clash interactions", 1));
-//        addDialogComponent(new DialogComponentBoolean(config.chemplp_clash_include_HH, "Hydrogen-hydrogen interactions"));
+        addDialogComponent(new DialogComponentNumber(config.outside_binding_site_penalty,
+                "Using precalculated grids use value to fill grid points outside the binding site definition", 1));
+        addDialogComponent(new DialogComponentBoolean(config.enable_sulphur_acceptors, "Sulphur acceptors"));
+        this.createNewGroup("Intramolecular ligand scoring");
+        addDialogComponent(new DialogComponentStringSelection(config.ligand_intra_score, "Ligand intra score",
+                config.ligand_intra_score.getChoices()));
+        addDialogComponent(new DialogComponentBoolean(config.chemplp_clash_include_14, "Chemplp+clash interactions"));
+        addDialogComponent(new DialogComponentBoolean(config.chemplp_clash_include_HH, "Hydrogen-hydrogen interactions"));
         
         
         this.createNewTab("Input");

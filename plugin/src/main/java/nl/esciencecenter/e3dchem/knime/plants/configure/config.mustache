@@ -1,6 +1,22 @@
-# scoring function and search settings
-scoring_function {{scoring_function}}
+# search algorithm
 search_speed {{search_speed}}
+aco_ants {{aco_ants}}
+flip_amide_bonds {{flip_amide_bonds}}
+flip_planar_n {{flip_planar_n}}
+force_flipped_bonds_planarity {{force_flipped_bonds_planarity}}
+force_planar_bond_rotation {{force_planar_bond_rotation}}
+rescore_mode {{rescore_mode}}
+flip_ring_corners {{flip_ring_corners}}
+
+# scoring functions
+# Intermolecular (protein-ligand interaction scoring)
+scoring_function {{scoring_function}}
+outside_binding_site_penalty {{outside_binding_site_penalty}}
+enable_sulphur_acceptors {{enable_sulphur_acceptors}}
+# Intramolecular ligand scoring
+ligand_intra_score {{ligand_intra_score}}
+chemplp_clash_include_14 {{chemplp_clash_include_14}}
+chemplp_clash_include_HH {{chemplp_clash_include_HH}}
 
 # input
 protein_file {{protein_file}}
@@ -21,8 +37,8 @@ cluster_structures {{cluster_structures}}
 cluster_rmsd {{cluster_rmsd}}
 
 # write 
-write_ranking_links {{#write_ranking_links}}1{{/write_ranking_links}}{{^write_ranking_links}}0{{/write_ranking_links}}
-write_protein_bindingsite {{#write_protein_bindingsite}}1{{/write_protein_bindingsite}}{{^write_protein_bindingsite}}0{{/write_protein_bindingsite}}
-write_protein_conformations {{#write_protein_conformations}}1{{/write_protein_conformations}}{{^write_protein_conformations}}0{{/write_protein_conformations}}
-write_merged_protein {{#write_merged_protein}}1{{/write_merged_protein}}{{^write_merged_protein}}0{{/write_merged_protein}}
+write_ranking_links {{write_ranking_links
+write_protein_bindingsite {{write_protein_bindingsite}}
+write_protein_conformations {{write_protein_conformations}}
+write_merged_protein {{write_merged_protein}}
 ####
