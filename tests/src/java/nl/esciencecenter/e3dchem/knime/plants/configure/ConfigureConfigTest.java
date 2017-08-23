@@ -54,6 +54,7 @@ public class ConfigureConfigTest {
         expected.put("write_ranking_links", "0");
         expected.put("protein_file", "protein.mol2");
         expected.put("write_protein_conformations", "1");
+        expected.put("write_protein_splitted", "1");
         expected.put("output_dir", "results");
         expected.put("ligand_file", "ligands.mol2");
         expected.put("bindingsite_radius", 1.0);
@@ -89,6 +90,7 @@ public class ConfigureConfigTest {
         settings.addBoolean("write_ranking_links", false);
         settings.addString("protein_file", "protein.mol2");
         settings.addBoolean("write_protein_conformations", true);
+        settings.addBoolean("write_protein_splitted", true);
         settings.addString("output_dir", "results");
         settings.addString("ligand_file", "ligands.mol2");
         settings.addDouble("bindingsite_radius", 1.0);

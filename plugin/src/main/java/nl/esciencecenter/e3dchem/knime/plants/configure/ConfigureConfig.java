@@ -50,6 +50,7 @@ public class ConfigureConfig {
     public SettingsModelString output_dir = new SettingsModelString("output_dir", "results");
     public SettingsModelBoolean write_protein_conformations = new SettingsModelBoolean("write_protein_conformations", true);
     public SettingsModelBoolean write_protein_bindingsite = new SettingsModelBoolean("write_protein_bindingsite", true);
+    public SettingsModelBoolean write_protein_splitted = new SettingsModelBoolean("write_protein_splitted", true);
     public SettingsModelBoolean write_multi_mol2 = new SettingsModelBoolean("write_multi_mol2", true);
     public SettingsModelBoolean write_ranking_links = new SettingsModelBoolean("write_ranking_links", false);
     public SettingsModelBoolean write_merged_protein = new SettingsModelBoolean("write_merged_protein", false);
@@ -86,6 +87,7 @@ public class ConfigureConfig {
         output_dir.saveSettingsTo(settings);
         write_protein_conformations.saveSettingsTo(settings);
         write_protein_bindingsite.saveSettingsTo(settings);
+        write_protein_splitted.saveSettingsTo(settings);
         write_multi_mol2.saveSettingsTo(settings);
         write_ranking_links.saveSettingsTo(settings);
         write_merged_protein.saveSettingsTo(settings);
@@ -123,6 +125,7 @@ public class ConfigureConfig {
         output_dir.loadSettingsFrom(settings);
         write_protein_conformations.loadSettingsFrom(settings);
         write_protein_bindingsite.loadSettingsFrom(settings);
+        write_protein_splitted.loadSettingsFrom(settings);
         write_multi_mol2.loadSettingsFrom(settings);
         write_ranking_links.loadSettingsFrom(settings);
         write_merged_protein.loadSettingsFrom(settings);
@@ -160,6 +163,7 @@ public class ConfigureConfig {
         output_dir.validateSettings(settings);
         write_protein_conformations.validateSettings(settings);
         write_protein_bindingsite.validateSettings(settings);
+        write_protein_splitted.validateSettings(settings);
         write_multi_mol2.validateSettings(settings);
         write_ranking_links.validateSettings(settings);
         write_merged_protein.validateSettings(settings);
@@ -198,6 +202,7 @@ public class ConfigureConfig {
         map.put("output_dir", output_dir.getStringValue());
         map.put("write_protein_conformations", write_protein_conformations.getBooleanValue() ? "1" : "0");
         map.put("write_protein_bindingsite", write_protein_bindingsite.getBooleanValue() ? "1" : "0");
+        map.put("write_protein_splitted", write_protein_splitted.getBooleanValue() ? "1" : "0");
         map.put("write_multi_mol2", write_multi_mol2.getBooleanValue() ? "1" : "0");
         map.put("write_ranking_links", write_ranking_links.getBooleanValue() ? "1" : "0");
         map.put("write_merged_protein", write_merged_protein.getBooleanValue() ? "1" : "0");
