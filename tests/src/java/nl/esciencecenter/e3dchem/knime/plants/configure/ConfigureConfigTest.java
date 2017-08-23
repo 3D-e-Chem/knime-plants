@@ -75,7 +75,7 @@ public class ConfigureConfigTest {
         settings.addBoolean("flip_planar_n", true);
         settings.addBoolean("force_flipped_bonds_planarity", false);
         settings.addBoolean("force_planar_bond_rotation", true);
-        settings.addBoolean("rescore_mode", true);
+        settings.addBoolean("rescore_simplex", true);
         settings.addBoolean("flip_ring_corners", false);
         settings.addInt("cluster_structures", 10);
         settings.addBoolean("write_multi_mol2", true);
