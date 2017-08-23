@@ -18,8 +18,8 @@
 </config>
 <config key="values">
 <entry key="array-size" type="xint" value="2"/>
-<entry key="0" type="xstring" value="/stderr.txt"/>
-<entry key="1" type="xstring" value="/stdout.txt"/>
+<entry key="0" type="xstring" value="stderr.txt"/>
+<entry key="1" type="xstring" value="stdout.txt"/>
 </config>
 <entry key="rowIdPrefix" type="xstring" value="Row"/>
 <entry key="rowIdSuffix" type="xstring" value=""/>
@@ -81,6 +81,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="7b114a5d-bf7f-4c6e-ad71-9064a60c8c5d"/>
+<entry key="file_store_id" type="xstring" value="ee95b18e-3989-47fa-8ede-0c99c9c25ae3"/>
 </config>
 </config>

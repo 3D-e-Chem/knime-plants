@@ -22,7 +22,7 @@
 <entry key="state" type="xstring" value="IDLE"/>
 <config key="nodecontainer_message">
 <entry key="type" type="xstring" value="WARNING"/>
-<entry key="message" type="xstring" value="&quot;/tmp/knime_run_test59779/knime_tc_ygoudulldggl&quot; does not exist or is not a directory"/>
+<entry key="message" type="xstring" value="&quot;/tmp/knime_run_test94828/knime_tc_2cjgfbiy3boe&quot; does not exist or is not a directory"/>
 </config>
 <entry key="factory" type="xstring" value="org.knime.base.node.io.listfiles2.ListFilesNodeFactory"/>
 <entry key="node-name" type="xstring" value="List Files"/>

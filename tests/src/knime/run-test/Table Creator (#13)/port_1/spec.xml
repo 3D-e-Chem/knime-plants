@@ -16,13 +16,13 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="/stderr.txt"/>
+<entry key="StringCell" type="xstring" value="stderr.txt"/>
 </config>
 </config>
 <config key="1">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="/stdout.txt"/>
+<entry key="StringCell" type="xstring" value="stdout.txt"/>
 </config>
 </config>
 </config>
