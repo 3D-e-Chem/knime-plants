@@ -42,7 +42,7 @@
              expert-flag="false"
              icon="nl/esciencecenter/e3dchem/knime/plants/default.png"
              id="PLANTS-configuration-reader"
-             name="PLANTS configuration Reader"
+             name="PLANTS configuration reader"
              workflowDir="src/main/knime/PLANTS-configuration-reader">
         </PersistedMetaNode>
 

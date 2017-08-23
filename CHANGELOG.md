@@ -5,6 +5,14 @@ The file is formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+### Added
+
+* Bundle plants executable (#8)
+
+### Changed
+
+* Runner writes stdout.txt and stderr.txt files
+
 ## [0.2.0] 2017-03-08
 
 ### Added
