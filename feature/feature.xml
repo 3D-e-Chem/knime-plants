@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="nl.esciencecenter.e3dchem.knime.plants.feature"
-      label="KNIME PLANTS"
+      label="KNIME PLANTS extension"
       version="0.2.0.qualifier"
       provider-name="Netherlands eScience Center"
       os="linux,macosx,win32"
