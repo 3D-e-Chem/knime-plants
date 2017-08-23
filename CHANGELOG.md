@@ -5,9 +5,12 @@ The file is formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+## [0.3.0] 2017-08-23
+
 ### Added
 
-* Bundle plants executable (#8)
+* Bundle PLANTS executable for Windows, Linux and MacOSX (#8)
+* More fields for PLANTS configuration generator node
 
 ### Changed
 
