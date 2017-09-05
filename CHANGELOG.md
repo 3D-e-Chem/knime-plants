@@ -5,6 +5,10 @@ The file is formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+### Fixed
+
+* Make write_protein_splitted configurable [#10]
+
 ## [0.3.0] 2017-08-23
 
 ### Added

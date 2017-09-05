@@ -78,6 +78,7 @@ public class ConfigureDialog extends DefaultNodeSettingsPane {
         addDialogComponent(new DialogComponentFileChooser(config.output_dir, "historyID4output_dir", JFileChooser.SAVE_DIALOG, true));
         addDialogComponent(new DialogComponentBoolean(config.write_protein_conformations, "Protein conformations"));
         addDialogComponent(new DialogComponentBoolean(config.write_protein_bindingsite, "Protein binding site"));
+        addDialogComponent(new DialogComponentBoolean(config.write_protein_splitted, "Protein splitted"));
         addDialogComponent(new DialogComponentBoolean(config.write_multi_mol2, "Multi-mol2"));
         addDialogComponent(new DialogComponentBoolean(config.write_ranking_links, "Ranked soft links"));
         addDialogComponent(new DialogComponentBoolean(config.write_merged_protein, "Merged protein"));

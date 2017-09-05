@@ -75,6 +75,11 @@
 <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
+<entry key="write_protein_splitted" type="xboolean" value="true"/>
+<config key="write_protein_splitted_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
 <entry key="write_multi_mol2" type="xboolean" value="true"/>
 <config key="write_ranking_links_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
