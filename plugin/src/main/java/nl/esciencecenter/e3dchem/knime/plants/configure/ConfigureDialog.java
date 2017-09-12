@@ -32,8 +32,6 @@ public class ConfigureDialog extends DefaultNodeSettingsPane {
         SettingsModelStringSet search_speed = config.search_speed;
         addDialogComponent(new DialogComponentStringSelection(search_speed, "Search speed", search_speed.getChoices()));
         addDialogComponent(new DialogComponentNumber(config.aco_ants, "Number of ants", 1));
-//        addDialogComponent(new DialogComponentNumber(config.aco_evap, "Evaporation factor", 0.1));
-//        addDialogComponent(new DialogComponentNumber(config.aco_sigma, "Iteration scaling factor", 0.1));
         addDialogComponent(new DialogComponentBoolean(config.flip_amide_bonds, "Flip amide bonds"));
         addDialogComponent(new DialogComponentBoolean(config.flip_planar_n, "Flip bonds next to planar nitrogens"));
         addDialogComponent(new DialogComponentBoolean(config.force_flipped_bonds_planarity,

@@ -80,13 +80,10 @@ public class ConfigureModel extends NodeModel {
 	protected DataTableSpec[] configure(final DataTableSpec[] inSpecs)
 			throws InvalidSettingsException {
 
-		// TODO: check if user settings are available, fit to the incoming
-		// table structure, and the incoming types are feasible for the node
-		// to execute. If the node can execute in its current state return
-		// the spec of its output data table(s) (if you can, otherwise an array
-		// with null elements), or throw an exception with a useful user message
+        // checking inSpecs is not needed, 
+        // each incoming row will be returned with an extra column with the PLANTS configuration
 
-		DataTableSpec appendedSpec = createOutputSpec();
+        DataTableSpec appendedSpec = createOutputSpec();
 		DataTableSpec outputSpec = new DataTableSpec(
 				inSpecs[IN_PORT], appendedSpec);
 
