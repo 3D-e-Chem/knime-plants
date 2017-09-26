@@ -1,6 +1,7 @@
 package nl.esciencecenter.e3dchem.knime.plants.configure;
 
 import static org.junit.Assert.*;
+import static org.junit.Assume.assumeFalse;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -35,6 +36,7 @@ public class ConfigureFactoryTest {
 	
 	@Test
 	public void test_createNodeDialogPane() {
+        assumeFalse("Does not work on Windows", System.getProperty("os.name").contains("Windows"));
 		assertEquals(ConfigureDialog.class, factory.createNodeDialogPane().getClass());
 	}
 	

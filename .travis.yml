@@ -4,8 +4,15 @@ matrix:
  include:
  - os: linux
    jdk: oraclejdk8
+   addons:
+    apt:
+      packages:
+      - metacity
+   env: DISPLAY=:5009
    script:
-   - xvfb-run mvn verify -B
+   - Xvfb :5009 &
+   - metacity --sm-disable &
+   - mvn verify -B
    - mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN
  - os: osx
    osx_image: xcode8.3
