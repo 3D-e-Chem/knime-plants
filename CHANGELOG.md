@@ -5,6 +5,10 @@ The file is formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+### Added
+
+* Bundle PLANTS executable for Windows 32bit (#11)
+
 ## [0.3.1] 2017-09-05
 
 ### Fixed

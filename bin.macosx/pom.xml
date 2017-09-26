@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>nl.esciencecenter.e3dchem.knime.plants</groupId>
-    <version>0.3.1-SNAPSHOT</version>
+    <version>0.3.2-SNAPSHOT</version>
     <artifactId>nl.esciencecenter.e3dchem.knime.plants</artifactId>
   </parent>
   <artifactId>nl.esciencecenter.e3dchem.knime.plants.bin.macosx</artifactId>
