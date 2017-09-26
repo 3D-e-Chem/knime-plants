@@ -8,6 +8,7 @@ PLANTS homepage at http://www.mnf.uni-tuebingen.de/fachbereiche/pharmazie-und-bi
 [![Build status Windows ](https://ci.appveyor.com/api/projects/status/wnwuac96jd7v76ri?svg=true)](https://ci.appveyor.com/project/3D-e-Chem/knime-plants)
 [![SonarQube Gate](https://sonarqube.com/api/badges/gate?key=nl.esciencecenter.e3dchem.knime.plants:nl.esciencecenter.e3dchem.knime.plants)](https://sonarqube.com/dashboard?id=nl.esciencecenter.e3dchem.knime.plants:nl.esciencecenter.e3dchem.knime.plants)
 [![SonarQube Coverage](https://sonarqube.com/api/badges/measure?key=nl.esciencecenter.e3dchem.knime.plants:nl.esciencecenter.e3dchem.knime.plants&metric=coverage)](https://sonarqube.com/component_measures/domain/Coverage?id=nl.esciencecenter.e3dchem.knime.plants:nl.esciencecenter.e3dchem.knime.plants)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.997273.svg)](https://doi.org/10.5281/zenodo.997273)
 
 This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform build steps.
 
