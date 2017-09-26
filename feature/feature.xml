@@ -5,7 +5,7 @@
       version="0.3.1.qualifier"
       provider-name="Netherlands eScience Center"
       os="linux,macosx,win32"
-      arch="x86_64">
+      arch="x86,x86_64">
 
    <description url="https://github.com/3D-e-Chem/knime-plants">
       KNIME nodes to configure, run and analyze PLANTS protein-ligand docking
@@ -261,4 +261,13 @@ http://www.apache.org/licenses/
          install-size="0"
          version="0.0.0"
          fragment="true"/>
- </feature>
+
+   <plugin
+         id="nl.esciencecenter.e3dchem.knime.plants.bin.windows32"
+         os="win32"
+         arch="x86"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"/>
+</feature>
