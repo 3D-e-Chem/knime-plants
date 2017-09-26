@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="spec.xml">
+<entry key="spec_name" type="xstring" value="default"/>
+<entry key="number_columns" type="xint" value="2"/>
+<config key="column_spec_0">
+<entry key="column_name" type="xstring" value="column1"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="1"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="a"/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_1">
+<entry key="column_name" type="xstring" value="PLANTS configuration"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="1"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="# search algorithm%%00010search_speed speed1%%00010aco_ants 20%%00010flip_amide_bonds 0%%00010flip_planar_n 1%%00010force_flipped_bonds_planarity 0%%00010force_planar_bond_rotation 1%%00010rescore_mode simplex%%00010flip_ring_corners 0%%00010%%00010# scoring functions%%00010# Intermolecular (protein-ligand interaction scoring)%%00010scoring_function chemplp%%00010outside_binding_site_penalty 50.0%%00010enable_sulphur_acceptors 0%%00010# Intramolecular ligand scoring%%00010ligand_intra_score clash2%%00010chemplp_clash_include_14 1%%00010chemplp_clash_include_HH 0%%00010%%00010# input%%00010protein_file protein.mol2%%00010ligand_file ligands.mol2%%00010%%00010# output%%00010output_dir results%%00010%%00010# write single mol2 files (e.g. for RMSD calculation)%%00010write_multi_mol2 1%%00010%%00010# binding site definition%%00010bindingsite_center 0.0 0.0 0.0%%00010bindingsite_radius 1.0%%00010%%00010# cluster algorithm%%00010cluster_structures 10%%00010cluster_rmsd 2.0%%00010%%00010# write %%00010write_ranking_links 0%%00010write_protein_bindingsite 1%%00010write_protein_conformations 1%%00010write_protein_splitted 1%%00010write_merged_protein 0%%00010####%%00010"/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+</config>

@@ -7,22 +7,16 @@
 </config>
 <config key="model">
 <config key="rowIndices">
-<entry key="array-size" type="xint" value="3"/>
+<entry key="array-size" type="xint" value="1"/>
 <entry key="0" type="xint" value="0"/>
-<entry key="1" type="xint" value="1"/>
-<entry key="2" type="xint" value="2"/>
 </config>
 <config key="columnIndices">
-<entry key="array-size" type="xint" value="3"/>
+<entry key="array-size" type="xint" value="1"/>
 <entry key="0" type="xint" value="0"/>
-<entry key="1" type="xint" value="0"/>
-<entry key="2" type="xint" value="0"/>
 </config>
 <config key="values">
-<entry key="array-size" type="xint" value="3"/>
+<entry key="array-size" type="xint" value="1"/>
 <entry key="0" type="xstring" value="a"/>
-<entry key="1" type="xstring" value="b"/>
-<entry key="2" type="xstring" value="c"/>
 </config>
 <entry key="rowIdPrefix" type="xstring" value="Row"/>
 <entry key="rowIdSuffix" type="xstring" value=""/>
@@ -64,11 +58,11 @@
 <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
-<entry key="node-bundle-version" type="xstring" value="3.1.2.v201603300837"/>
-<entry key="node-feature-name" type="xstring" value="Lhasa Metabolism Feature"/>
-<entry key="node-feature-symbolic-name" type="xstring" value="org.lhasalimited.knime.metabolism.feature.feature.group"/>
-<entry key="node-feature-vendor" type="xstring" value="Lhasa Limited (http://www.lhasalimited.org)"/>
-<entry key="node-feature-version" type="xstring" value="1.1.0.v201602151519"/>
+<entry key="node-bundle-version" type="xstring" value="3.3.1.v201612190931"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Core"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-feature-version" type="xstring" value="3.3.1.v201612192115"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Table Creator"/>
 <entry key="hasContent" type="xboolean" value="true"/>
@@ -78,12 +72,12 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 3, Cols: 1"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 1, Cols: 1"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="965f3334-13c1-422b-af9b-4778e77e5974"/>
+<entry key="file_store_id" type="xstring" value="097333f6-8b4c-4d59-bd5d-f670e852b0ef"/>
 </config>
 </config>

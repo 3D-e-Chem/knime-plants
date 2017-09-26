@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<config key="search_speed_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="search_speed" type="xstring" value="speed1"/>
+<config key="aco_ants_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="aco_ants" type="xint" value="20"/>
+<config key="flip_amide_bonds_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="flip_amide_bonds" type="xboolean" value="false"/>
+<config key="flip_planar_n_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="flip_planar_n" type="xboolean" value="true"/>
+<config key="force_flipped_bonds_planarity_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="force_flipped_bonds_planarity" type="xboolean" value="false"/>
+<config key="force_planar_bond_rotation_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="force_planar_bond_rotation" type="xboolean" value="true"/>
+<config key="rescore_simplex_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="rescore_simplex" type="xboolean" value="true"/>
+<config key="flip_ring_corners_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="flip_ring_corners" type="xboolean" value="false"/>
+<config key="bindingsite_center_x_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_double"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="bindingsite_center_x" type="xdouble" value="0.0"/>
+<config key="bindingsite_center_y_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_double"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="bindingsite_center_y" type="xdouble" value="0.0"/>
+<config key="bindingsite_center_z_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_double"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="bindingsite_center_z" type="xdouble" value="0.0"/>
+<config key="bindingsite_radius_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_double"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="bindingsite_radius" type="xdouble" value="1.0"/>
+<config key="cluster_rmsd_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_double"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="cluster_rmsd" type="xdouble" value="2.0"/>
+<config key="cluster_structures_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="cluster_structures" type="xint" value="10"/>
+<config key="scoring_function_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="scoring_function" type="xstring" value="chemplp"/>
+<config key="outside_binding_site_penalty_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_double"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="outside_binding_site_penalty" type="xdouble" value="50.0"/>
+<config key="enable_sulphur_acceptors_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="enable_sulphur_acceptors" type="xboolean" value="false"/>
+<config key="ligand_intra_score_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="ligand_intra_score" type="xstring" value="clash2"/>
+<config key="chemplp_clash_include_14_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="chemplp_clash_include_14" type="xboolean" value="true"/>
+<config key="chemplp_clash_include_HH_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="chemplp_clash_include_HH" type="xboolean" value="false"/>
+<config key="protein_file_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="protein_file" type="xstring" value="protein.mol2"/>
+<config key="ligand_file_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="ligand_file" type="xstring" value="ligands.mol2"/>
+<config key="output_dir_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="output_dir" type="xstring" value="results"/>
+<config key="write_protein_conformations_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="write_protein_conformations" type="xboolean" value="true"/>
+<config key="write_protein_bindingsite_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="write_protein_bindingsite" type="xboolean" value="true"/>
+<config key="write_protein_splitted_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="write_protein_splitted" type="xboolean" value="true"/>
+<config key="write_multi_mol2_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="write_multi_mol2" type="xboolean" value="true"/>
+<config key="write_ranking_links_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="write_ranking_links" type="xboolean" value="false"/>
+<config key="write_merged_protein_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="write_merged_protein" type="xboolean" value="false"/>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="Node under test"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="403"/>
+<entry key="y-coordinate" type="xint" value="239"/>
+<entry key="width" type="xint" value="115"/>
+<entry key="height" type="xint" value="16"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="9"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="CONFIGURED"/>
+<entry key="factory" type="xstring" value="nl.esciencecenter.e3dchem.knime.plants.configure.ConfigureFactory"/>
+<entry key="node-name" type="xstring" value="PLANTS configuration generator"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME nodes for PLANTS"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="nl.esciencecenter.e3dchem.knime.plants.plugin"/>
+<entry key="node-bundle-vendor" type="xstring" value="Netherlands eScience Center"/>
+<entry key="node-bundle-version" type="xstring" value="0.3.0.v201709050854"/>
+<entry key="node-feature-name" type="xstring" value="KNIME PLANTS extension"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="nl.esciencecenter.e3dchem.knime.plants.feature.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="Netherlands eScience Center"/>
+<entry key="node-feature-version" type="xstring" value="0.3.0.v201709050854"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="PLANTS configuration generator"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>
