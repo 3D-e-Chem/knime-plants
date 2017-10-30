@@ -59,7 +59,7 @@ public class RunNodeModel extends NodeModel {
             List<String> arguments = StreamSupport.stream(argumentsCell.spliterator(), false)
                     .map(c -> ((StringCell) c).getStringValue()).collect(Collectors.toList());
             File workingDirectory = new File(((StringCell) inRow.getCell(workingDirectoryIndex)).getStringValue());
-            DataRow row = process(inRow.getKey(), workingDirectory, executable, mode, arguments);
+            DataRow row = process(inRow.getKey(), workingDirectory, executable, mode, arguments, exec);
             container.addRowToTable(row);
             exec.checkCanceled();
             exec.setProgress(0.9 * currentRow / rowCount, " processing row " + currentRow);
@@ -72,8 +72,9 @@ public class RunNodeModel extends NodeModel {
         return new BufferedDataTable[] { out };
     }
 
-    public DataRow process(RowKey rowKey, File workingDirectory, String executable, String mode, List<String> arguments)
-            throws IOException, InterruptedException {
+    public DataRow process(RowKey rowKey, File workingDirectory, String executable, String mode, List<String> arguments,
+            ExecutionContext context)
+            throws IOException, InterruptedException, CanceledExecutionException {
         List<String> commands = new ArrayList<>();
         commands.add(executable);
         commands.add("--mode");
@@ -85,7 +86,13 @@ public class RunNodeModel extends NodeModel {
         File stdout = new File(workingDirectory, "stdout.txt");
         Process process = new ProcessBuilder(commands).directory(workingDirectory).redirectError(stderr).redirectOutput(stdout)
                 .start();
-        int exitCode = process.waitFor();
+        try {
+            process.waitFor();
+        } catch (InterruptedException e) {
+            process.destroy();
+            throw e;
+        }
+        int exitCode = process.exitValue();
         if (exitCode != 0) {
             setWarningMessage("Some rows failed to run correctly");
         }

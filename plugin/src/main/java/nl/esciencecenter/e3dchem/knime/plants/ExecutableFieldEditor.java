@@ -16,7 +16,7 @@ public class ExecutableFieldEditor extends FileFieldEditor {
 	protected boolean checkState() {
 		if (this.getStringValue() != null && this.getStringValue().length() > 0) {
 			try {
-				new ProcessBuilder().command(this.getStringValue()).start().waitFor();
+                new ProcessBuilder().command(this.getStringValue()).start().waitFor();
 				// Not interested in exitCode, just want to know if it can be
 				// executed
 				clearErrorMessage();
