@@ -5,6 +5,12 @@ The file is formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+## [0.3.3] 2017-11-08
+
+### Fixed
+
+* PLANTS is running in the background after cancellation (#12)
+
 ## [0.3.2] 2017-09-26
 
 ### Added

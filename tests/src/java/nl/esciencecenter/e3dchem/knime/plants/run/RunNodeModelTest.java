@@ -15,7 +15,6 @@ import org.knime.core.data.DataRow;
 import org.knime.core.data.RowKey;
 import org.knime.core.data.def.DefaultRow;
 import org.knime.core.data.def.IntCell;
-import org.knime.core.node.ExecutionMonitor;
 
 public class RunNodeModelTest {
 	@Rule
@@ -31,10 +30,9 @@ public class RunNodeModelTest {
 		String executable = "/bin/echo";
 		String mode = "bind";
 		List<String> arguments = Arrays.asList("arg1", "arg2");
-        ExecutionMonitor context = new ExecutionMonitor();
 
-        DataRow row = node.process(rowKey, workingDirectory, executable, mode, arguments, context);
-		
+        DataRow row = node.process(rowKey, workingDirectory, executable, mode, arguments);
+
         DefaultRow expected = new DefaultRow(rowKey, new IntCell(0));
 		assertEquals(expected, row);
 	}

@@ -59,7 +59,7 @@ public class RunNodeModel extends NodeModel {
             List<String> arguments = StreamSupport.stream(argumentsCell.spliterator(), false)
                     .map(c -> ((StringCell) c).getStringValue()).collect(Collectors.toList());
             File workingDirectory = new File(((StringCell) inRow.getCell(workingDirectoryIndex)).getStringValue());
-            DataRow row = process(inRow.getKey(), workingDirectory, executable, mode, arguments, exec);
+            DataRow row = process(inRow.getKey(), workingDirectory, executable, mode, arguments);
             container.addRowToTable(row);
             exec.checkCanceled();
             exec.setProgress(0.9 * currentRow / rowCount, " processing row " + currentRow);
@@ -72,9 +72,8 @@ public class RunNodeModel extends NodeModel {
         return new BufferedDataTable[] { out };
     }
 
-    public DataRow process(RowKey rowKey, File workingDirectory, String executable, String mode, List<String> arguments,
-            ExecutionContext context)
-            throws IOException, InterruptedException, CanceledExecutionException {
+    public DataRow process(RowKey rowKey, File workingDirectory, String executable, String mode, List<String> arguments)
+            throws IOException, InterruptedException {
         List<String> commands = new ArrayList<>();
         commands.add(executable);
         commands.add("--mode");

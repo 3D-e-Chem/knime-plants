@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: KNIME nodes for PLANTS
 Bundle-SymbolicName: nl.esciencecenter.e3dchem.knime.plants.plugin;singleton:=true
-Bundle-Version: 0.3.2.qualifier
+Bundle-Version: 0.3.3.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Activator: nl.esciencecenter.e3dchem.knime.plants.Activator
 Bundle-Vendor: Netherlands eScience Center

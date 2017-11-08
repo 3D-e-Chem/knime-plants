@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/nl.esciencecenter.e3dchem.knime.plants.feature-0.3.2.qualifier.jar" id="nl.esciencecenter.e3dchem.knime.plants.feature" version="0.3.2.qualifier">
+   <feature url="features/nl.esciencecenter.e3dchem.knime.plants.feature-0.3.3.qualifier.jar" id="nl.esciencecenter.e3dchem.knime.plants.feature" version="0.3.3.qualifier">
       <category name="nl.esciencecenter.3D-e-Chem"/>
    </feature>
 <category-def name="nl.esciencecenter.3D-e-Chem" label="KNIME 3D-e-Chem Contributions">
