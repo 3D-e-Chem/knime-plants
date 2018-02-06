@@ -41,11 +41,41 @@
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
 <entry key="cluster_structures" type="xint" value="10"/>
+<config key="aco_ants_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="aco_ants" type="xint" value="20"/>
 <config key="scoring_function_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
 <entry key="scoring_function" type="xstring" value="chemplp"/>
+<config key="outside_binding_site_penalty_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_double"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="outside_binding_site_penalty" type="xdouble" value="50.0"/>
+<config key="enable_sulphur_acceptors_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="enable_sulphur_acceptors" type="xboolean" value="false"/>
+<config key="ligand_intra_score_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="ligand_intra_score" type="xstring" value="clash2"/>
+<config key="chemplp_clash_include_14_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="chemplp_clash_include_14" type="xboolean" value="true"/>
+<config key="chemplp_clash_include_HH_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="chemplp_clash_include_HH" type="xboolean" value="false"/>
 <config key="protein_file_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -61,6 +91,36 @@
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
 <entry key="output_dir" type="xstring" value="results"/>
+<config key="flip_amide_bonds_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="flip_amide_bonds" type="xboolean" value="false"/>
+<config key="flip_planar_n_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="flip_planar_n" type="xboolean" value="true"/>
+<config key="force_flipped_bonds_planarity_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="force_flipped_bonds_planarity" type="xboolean" value="false"/>
+<config key="force_planar_bond_rotation_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="force_planar_bond_rotation" type="xboolean" value="true"/>
+<config key="flip_ring_corners_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="flip_ring_corners" type="xboolean" value="false"/>
+<config key="rescore_simplex_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="rescore_simplex" type="xboolean" value="true"/>
 <config key="write_protein_conformations_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
