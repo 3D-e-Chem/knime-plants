@@ -29,9 +29,10 @@
 	<properties>
 		<knime.version>3.3</knime.version>
 		<knime.update.site>http://update.knime.org/analytics-platform/${knime.version}/</knime.update.site>
-		<tycho.version>1.0.0</tycho.version>
-		<tycho.extras.version>1.0.0</tycho.extras.version>
+		<tycho.version>1.1.0</tycho.version>
+		<tycho.extras.version>1.1.0</tycho.extras.version>
 		<tycho.test.jvmArgs>-Xmx512m</tycho.test.jvmArgs>
+		<tycho.scmUrl>scm:git:https://github.com/3D-e-Chem/knime-plants.git</tycho.scmUrl>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<tycho.scmUrl>scm:git:https://github.com/3D-e-Chem/knime-plants.git</tycho.scmUrl>
@@ -156,6 +157,48 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+	<profiles>
+		<profile>
+			<id>source-feature</id>
+			<activation>
+				<file>
+					<exists>feature.xml</exists>
+				</file>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.eclipse.tycho.extras</groupId>
+						<artifactId>tycho-source-feature-plugin</artifactId>
+						<version>${tycho.extras.version}</version>
+						<executions>
+							<execution>
+								<id>source-feature</id>
+								<phase>package</phase>
+								<goals>
+									<goal>source-feature</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.eclipse.tycho</groupId>
+						<artifactId>tycho-p2-plugin</artifactId>
+						<version>${tycho.version}</version>
+						<executions>
+							<execution>
+								<id>attach-p2-metadata</id>
+								<phase>package</phase>
+								<goals>
+									<goal>p2-metadata</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 	<modules>
 		<module>plugin</module>
 		<module>feature</module>

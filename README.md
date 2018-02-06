@@ -22,7 +22,7 @@ Steps to get the PLANTS KNIME node inside KNIME:
 
 1. Goto Help > Install new software ... menu
 2. Press add button
-3. Fill text fields with `https://3d-e-chem.github.io/updates`
+3. Fill text fields with the `https://3d-e-chem.github.io/updates` update site url.
 4. Select --all sites-- in `work with` pulldown
 5. Select the node
 6. Install software
@@ -47,13 +47,6 @@ mvn verify
 An Eclipse update site will be made in `p2/target/repository` directory.
 The update site can be used to perform a local installation.
 
-## Continuous Integration
-
-Configuration files to run Continuous Integration builds on Linux (Travis-CI), OS X (Travis-CI) and Windows (AppVeyor) are present.
-
-See `./.travis.yml` file how to trigger a Travis-CI build for every push or pull request.
-See `./appveyor.yml` file how to run on https://www.appveyor.com .
-
 # Development
 
 Steps to get development environment setup:
@@ -61,20 +54,37 @@ Steps to get development environment setup:
 1. Download KNIME SDK from https://www.knime.org/downloads/overview
 2. Install/Extract/start KNIME SDK
 3. Start SDK
-4. Install m2e (Maven integration for Eclipse) + KNIME Testing framework + Vernalis
+4. Install m2e (Maven integration for Eclipse) + KNIME Testing framework + Vernalis + SWTBot
 
-    1. Goto Help > Install new software ...
-    2. Make sure Update site http://update.knime.org/analytics-platform/3.3 and https://3d-e-chem.github.io/updates are in the pull down list otherwise add them
-    3. Select --all sites-- in work with pulldown
-    4. Select m2e (Maven integration for Eclipse)
-    5. Select `Test Knime workflows from a Junit test`
-    6. Select `Splash & node category for 3D-e-Chem KNIME nodes`
-    7. Select `Vernalis`
-    8. Install software & restart
+    1. Goto Window -> Preferences -> Install/Update -> Available Software Sites
+    2. Make sure the following Software Sites (or a version of them) are present otherwise add them:
+
+      * http://update.knime.org/analytics-platform/3.3
+      * http://update.knime.org/community-contributions/trusted/3.3
+      * https://3d-e-chem.github.io/updates
+      * http://download.eclipse.org/eclipse/updates/4.6
+      * http://download.eclipse.org/releases/neon
+      * http://download.eclipse.org/technology/swtbot/releases/latest/
+
+    3. Goto Help -> Check for updates
+    4. Install any updates found & restart
+    5. Goto Help > Install new software ...
+    6. Select --All Available sites-- in work with pulldown
+    7. Wait for list to be filled, `Pending...` should disappear
+    8. Select the following items:
+    
+	* m2e (Maven integration for Eclipse)
+	* Test Knime workflows from a Junit test
+	* Splash & node category for 3D-e-Chem KNIME nodes
+	* Vernalis
+	* SWTBot for Eclipse Testing
+	* SWtBot JUnit Headless launchers for Eclipse
+		
+    5. Install software & restart
 
 5. Import this repo as an Existing Maven project
 
-During import the Tycho Eclipse providers must be installed.
+After the import the Maven plugin connections must be setup, a Discover m2e connections dialog will popup to install all requested connectors, after the installation restart eclipse.
 
 ## Meta nodes
 
