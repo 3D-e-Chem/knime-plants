@@ -12,6 +12,14 @@ PLANTS homepage at http://www.mnf.uni-tuebingen.de/fachbereiche/pharmazie-und-bi
 
 This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform build steps.
 
+# License
+
+Included in PLANTS nodes plugin is the PLANTS executable with academic license (http://www.mnf.uni-tuebingen.de/fachbereiche/pharmazie-und-biochemie/pharmazie/pharmazeutische-chemie/pd-dr-t-exner/research/plants.html). 
+When installing the plugin you have to accept this license agreement, you agree to use the included PLANTS executable only for academic usage.
+To use these nodes in a commercial manner you need to acquire a valid license yourself and configure the PLANTS node to use the commercial executable.
+
+The PLANTS KNIME nodes themselves have the Apache 2.0 license.
+
 # Installation
 
 Requirements:
