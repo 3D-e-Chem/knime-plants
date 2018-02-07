@@ -2,7 +2,7 @@
 <feature
       id="nl.esciencecenter.e3dchem.knime.plants.feature"
       label="KNIME PLANTS extension"
-      version="0.3.3.qualifier"
+      version="0.3.4.qualifier"
       provider-name="Netherlands eScience Center"
       os="linux,macosx,win32"
       arch="x86,x86_64">

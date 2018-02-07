@@ -5,6 +5,12 @@ The file is formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+## [0.3.4] 2018-02-07
+
+### Fixed
+
+* On KNIME startup a PLANTS error appears (#13)
+
 ## [0.3.3] 2017-11-08
 
 ### Fixed
