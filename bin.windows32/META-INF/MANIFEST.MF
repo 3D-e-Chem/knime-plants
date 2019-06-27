@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: KNIME nodes for PLANTS, Windows binaries 32bit
 Bundle-SymbolicName: nl.esciencecenter.e3dchem.knime.plants.bin.windows32;singleton:=true
-Bundle-Version: 0.3.4.qualifier
+Bundle-Version: 0.3.5.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Vendor: Netherlands eScience Center
 Bundle-ActivationPolicy: lazy
