@@ -6,8 +6,8 @@ PLANTS homepage at http://www.mnf.uni-tuebingen.de/fachbereiche/pharmazie-und-bi
 
 [![Build Status Linux & OS X ](https://travis-ci.org/3D-e-Chem/knime-plants.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-plants)
 [![Build status Windows ](https://ci.appveyor.com/api/projects/status/wnwuac96jd7v76ri?svg=true)](https://ci.appveyor.com/project/3D-e-Chem/knime-plants)
-[![SonarQube Gate](https://sonarqube.com/api/badges/gate?key=nl.esciencecenter.e3dchem.knime.plants:nl.esciencecenter.e3dchem.knime.plants)](https://sonarqube.com/dashboard?id=nl.esciencecenter.e3dchem.knime.plants:nl.esciencecenter.e3dchem.knime.plants)
-[![SonarQube Coverage](https://sonarqube.com/api/badges/measure?key=nl.esciencecenter.e3dchem.knime.plants:nl.esciencecenter.e3dchem.knime.plants&metric=coverage)](https://sonarqube.com/component_measures/domain/Coverage?id=nl.esciencecenter.e3dchem.knime.plants:nl.esciencecenter.e3dchem.knime.plants)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nl.esciencecenter.e3dchem.knime.plants%3Anl.esciencecenter.e3dchem.knime.plants&metric=alert_status)](https://sonarcloud.io/dashboard?id=nl.esciencecenter.e3dchem.knime.plants%3Anl.esciencecenter.e3dchem.knime.plants)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=nl.esciencecenter.e3dchem.knime.plants%3Anl.esciencecenter.e3dchem.knime.plants&metric=coverage)](https://sonarcloud.io/dashboard?id=nl.esciencecenter.e3dchem.knime.plants%3Anl.esciencecenter.e3dchem.knime.plants)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.997272.svg)](https://doi.org/10.5281/zenodo.997272)
 
 This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform build steps.
@@ -24,7 +24,7 @@ The PLANTS KNIME nodes themselves have the Apache 2.0 license.
 
 Requirements:
 
-* KNIME, https://www.knime.org, version 3.3 or higher
+* KNIME, https://www.knime.org, version 4.0 or higher
 
 Steps to get the PLANTS KNIME node inside KNIME:
 
@@ -57,46 +57,19 @@ The update site can be used to perform a local installation.
 
 # Development
 
-Steps to get development environment setup:
+Steps to get development environment setup based on https://github.com/knime/knime-sdk-setup#sdk-setup:
 
-1. Download KNIME SDK from https://www.knime.org/downloads/overview
-2. Install/Extract/start KNIME SDK
-3. Start SDK
-4. Install m2e (Maven integration for Eclipse) + KNIME Testing framework + Vernalis + SWTBot
+1. Install Java 8
+2. Install Eclipse for [RCP and RAP developers](https://www.eclipse.org/downloads/packages/release/2018-12/r/eclipse-ide-rcp-and-rap-developers)
+3. Configure Java 8 inside Eclipse Window > Preferences > Java > Installed JREs
+4. Import this repo as an Existing Maven project
+5. Activate target platform by going to Window > Preferences > Plug-in Development > Target Platform and check the `KNIME Analytics Platform (4.0) - nl.esciencecenter.e3dchem.knime.plants.targetplatform/KNIME-AP-4.0.target` target definition.
 
-    1. Goto Window -> Preferences -> Install/Update -> Available Software Sites
-    2. Make sure the following Software Sites (or a version of them) are present otherwise add them:
-
-      * http://update.knime.org/analytics-platform/3.3
-      * http://update.knime.org/community-contributions/trusted/3.3
-      * https://3d-e-chem.github.io/updates
-      * http://download.eclipse.org/eclipse/updates/4.6
-      * http://download.eclipse.org/releases/neon
-      * http://download.eclipse.org/technology/swtbot/releases/latest/
-
-    3. Goto Help -> Check for updates
-    4. Install any updates found & restart
-    5. Goto Help > Install new software ...
-    6. Select --All Available sites-- in work with pulldown
-    7. Wait for list to be filled, `Pending...` should disappear
-    8. Select the following items:
-    
-	* m2e (Maven integration for Eclipse)
-	* Test Knime workflows from a Junit test
-	* Splash & node category for 3D-e-Chem KNIME nodes
-	* Vernalis
-	* SWTBot for Eclipse Testing
-	* SWtBot JUnit Headless launchers for Eclipse
-		
-    5. Install software & restart
-
-5. Import this repo as an Existing Maven project
-
-After the import the Maven plugin connections must be setup, a Discover m2e connections dialog will popup to install all requested connectors, after the installation restart eclipse.
+During import the Tycho Eclipse providers must be installed.
 
 ## Meta nodes
 
-This plugin uses metanodes as it's public nodes. The are created in the following way:
+This plugin uses metanodes as it's public nodes. They are created in the following way:
 
 1. The meta nodes are first created and tested inside the example workflows in the `examples/` directory.
 2. The `name` and `customDescription` field inside `examples/**/workflow.knime` is filled.
@@ -141,7 +114,7 @@ This can be skipped by running maven offline using `mvn -o`.
 7. Create a GitHub release
 8. Update Zenodo entry
   1. Correct authors
-  2. Correct license
-  3. Add https://doi.org/10.1007/11839088_22 as `is referenced by this upload` related identifier
+  2. Add https://doi.org/10.1007/11839088_22 as `is referenced by this upload` related identifier
 9. Make nodes available to 3D-e-Chem KNIME feature by following steps at https://github.com/3D-e-Chem/knime-node-collection#new-release
+10. Update CITIATION.cff with new DOI
 

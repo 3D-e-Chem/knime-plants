@@ -2,16 +2,16 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Tests
 Bundle-SymbolicName: nl.esciencecenter.e3dchem.knime.plants.tests
-Bundle-Version: 0.3.4.qualifier
+Bundle-Version: 0.3.5.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: org.junit;bundle-version="4.12.0",
- org.knime.core;bundle-version="[3.3.0,4.0.0)",
- org.knime.base;bundle-version="[3.3.0,4.0.0)",
- org.knime.testing;bundle-version="[3.3.0,4.0.0)",
- org.knime.jsnippets;bundle-version="[3.3.0,4.0.0)",
+ org.knime.core;bundle-version="[4.0.0,5.0.0)",
+ org.knime.base;bundle-version="[4.0.0,5.0.0)",
+ org.knime.testing;bundle-version="[4.0.0,5.0.0)",
+ org.knime.jsnippets;bundle-version="[4.0.0,5.0.0)",
  org.eclipse.ui;bundle-version="[3.0.0,4.0.0)",
- org.eclipse.swtbot.junit4_x;bundle-version="2.6.0",
- org.eclipse.swtbot.eclipse.finder;bundle-version="2.6.0",
+ org.eclipse.swtbot.junit4_x,
+ org.eclipse.swtbot.eclipse.finder,
  nl.esciencecenter.e3dchem.knime.testing.plugin;bundle-version="[1.0.0,2.0.0)",
  nl.esciencecenter.e3dchem.knime.plants.plugin
 Bundle-Vendor: Netherlands eScience Center

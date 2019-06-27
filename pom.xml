@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nl.esciencecenter.e3dchem.knime.plants</groupId>
 	<artifactId>nl.esciencecenter.e3dchem.knime.plants</artifactId>
-	<version>0.3.4-SNAPSHOT</version>
+	<version>0.3.5-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<scm>
@@ -27,43 +27,16 @@
 	</prerequisites>
 
 	<properties>
-		<knime.version>3.3</knime.version>
-		<knime.update.site>http://update.knime.org/analytics-platform/${knime.version}/</knime.update.site>
-		<tycho.version>1.1.0</tycho.version>
-		<tycho.extras.version>1.1.0</tycho.extras.version>
+		<tycho.version>1.4.0</tycho.version>
+		<tycho.extras.version>1.4.0</tycho.extras.version>
 		<tycho.test.jvmArgs>-Xmx512m</tycho.test.jvmArgs>
-		<tycho.scmUrl>scm:git:https://github.com/3D-e-Chem/knime-plants.git</tycho.scmUrl>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+                <target.file>KNIME-AP-4.0</target.file>
 		<tycho.scmUrl>scm:git:https://github.com/3D-e-Chem/knime-plants.git</tycho.scmUrl>
-		<sonar.host.url>https://sonarqube.com</sonar.host.url>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 		<sonar.organization>3d-e-chem</sonar.organization>
 	</properties>
-	<repositories>
-		<repository>
-			<id>knime</id>
-			<layout>p2</layout>
-			<url>${knime.update.site}</url>
-		</repository>
-
-		<repository>
-			<id>knime-community-trusted</id>
-			<layout>p2</layout>
-			<url>http://update.knime.org/community-contributions/trusted/${knime.version}</url>
-		</repository>
-
-		<repository>
-			<id>3d-e-chem</id>
-			<layout>p2</layout>
-			<url>https://3d-e-chem.github.io/updates</url>
-		</repository>
-
-                <repository>
-                        <id>swtbot</id>
-                        <layout>p2</layout>
-                        <url>http://download.eclipse.org/technology/swtbot/releases/latest/</url>
-                </repository>
-	</repositories>
 	<build>
 		<plugins>
 			<plugin>
@@ -102,6 +75,14 @@
 							<arch>x86_64</arch>
 						</environment>
 					</environments>
+                    <target>
+						<artifact>
+							<groupId>nl.esciencecenter.e3dchem.knime.plants</groupId>
+							<artifactId>nl.esciencecenter.e3dchem.knime.plants.targetplatform</artifactId>
+							<version>${project.version}</version>
+							<classifier>${target.file}</classifier>
+						</artifact>
+					</target>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -152,53 +133,13 @@
 							<generate>true</generate>
 						</sourceReferences>
 						<format>'v'yyyyMMddHHmm</format>
+						<!-- Uncomment to package with uncommited code-->
+						<!-- <jgit.dirtyWorkingTree>warning</jgit.dirtyWorkingTree> -->
 					</configuration>
 				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
-	<profiles>
-		<profile>
-			<id>source-feature</id>
-			<activation>
-				<file>
-					<exists>feature.xml</exists>
-				</file>
-			</activation>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.eclipse.tycho.extras</groupId>
-						<artifactId>tycho-source-feature-plugin</artifactId>
-						<version>${tycho.extras.version}</version>
-						<executions>
-							<execution>
-								<id>source-feature</id>
-								<phase>package</phase>
-								<goals>
-									<goal>source-feature</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-					<plugin>
-						<groupId>org.eclipse.tycho</groupId>
-						<artifactId>tycho-p2-plugin</artifactId>
-						<version>${tycho.version}</version>
-						<executions>
-							<execution>
-								<id>attach-p2-metadata</id>
-								<phase>package</phase>
-								<goals>
-									<goal>p2-metadata</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
 	<modules>
 		<module>plugin</module>
 		<module>feature</module>
@@ -208,5 +149,6 @@
 		<module>bin.macosx</module>
 		<module>bin.windows</module>
 		<module>bin.windows32</module>
+                <module>targetplatform</module>
 	</modules>
 </project>
