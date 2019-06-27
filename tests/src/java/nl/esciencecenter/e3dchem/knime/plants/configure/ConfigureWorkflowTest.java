@@ -24,7 +24,7 @@ public class ConfigureWorkflowTest {
     public void setUp() {
         TestrunConfiguration runConfiguration = new TestrunConfiguration();
         runConfiguration.setTestDialogs(true);
-        runConfiguration.setReportDeprecatedNodes(true);
+        runConfiguration.setReportDeprecatedNodes(false);
         runConfiguration.setCheckMemoryLeaks(false);
         runConfiguration.setLoadSaveLoad(false);
         runner = new TestFlowRunner(collector, runConfiguration);

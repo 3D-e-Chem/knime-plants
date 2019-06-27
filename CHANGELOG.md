@@ -5,6 +5,12 @@ The file is formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+## [0.3.5] 2019-06-27
+
+### Changes
+
+- Requires KNIME 4.0 [#14](https://github.com/3D-e-Chem/knime-plants/issues/14)
+
 ## [0.3.4] 2018-02-07
 
 ### Fixed

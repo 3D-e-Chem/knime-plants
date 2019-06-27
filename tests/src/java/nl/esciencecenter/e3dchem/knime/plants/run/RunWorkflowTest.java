@@ -29,7 +29,7 @@ public class RunWorkflowTest {
     public void setUp() throws IOException {
         TestrunConfiguration runConfiguration = new TestrunConfiguration();
         runConfiguration.setTestDialogs(true);
-        runConfiguration.setReportDeprecatedNodes(true);
+        runConfiguration.setReportDeprecatedNodes(false);
         runConfiguration.setCheckMemoryLeaks(false);
         runConfiguration.setLoadSaveLoad(false);
         runner = new TestFlowRunner(collector, runConfiguration);

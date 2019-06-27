@@ -7,12 +7,12 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Activator: nl.esciencecenter.e3dchem.knime.plants.Activator
 Bundle-Vendor: Netherlands eScience Center
 Require-Bundle: org.eclipse.core.runtime,
- org.knime.workbench.core;bundle-version="[3.3.0,4.0.0)",
- org.knime.workbench.repository;bundle-version="[3.3.0,4.0.0)",
- org.knime.base;bundle-version="[3.3.0,4.0.0)",
- org.knime.core;bundle-version="[3.3.0,4.0.0)",
- org.knime.chem.types;bundle-version="[3.3.0,4.0.0)",
- com.vernalis.knime;bundle-version="[1.8.0,2.0.0)",
+ org.knime.workbench.core;bundle-version="[4.0.0,5.0.0)",
+ org.knime.workbench.repository;bundle-version="[4.0.0,5.0.0)",
+ org.knime.base;bundle-version="[4.0.0,5.0.0)",
+ org.knime.core;bundle-version="[4.0.0,5.0.0)",
+ org.knime.chem.types;bundle-version="[4.0.0,5.0.0)",
+ com.vernalis.knime;bundle-version="[1.20.3,2.0.0)",
  nl.esciencecenter.e3dchem.plugin,
  org.eclipse.jface
 Bundle-ActivationPolicy: lazy
