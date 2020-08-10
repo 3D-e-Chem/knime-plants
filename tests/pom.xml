@@ -17,7 +17,7 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.8.0</version>
+				<version>0.8.5</version>
 				<executions>
 					<execution>
 						<goals>
@@ -29,7 +29,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!-- the report goal of jacoco-maven-plugin plugin shows coverage of tests. 
+			<!-- the report goal of jacoco-maven-plugin plugin shows coverage of tests.
 			  To get coverage of ../plugin/src/main/java use the jacoco ant reporter.
 			  See https://intellectualcramps.wordpress.com/2012/03/22/jacoco-tycho-and-coverage-reports/
 			-->
@@ -41,7 +41,7 @@
 					<dependency>
 						<groupId>org.jacoco</groupId>
 						<artifactId>org.jacoco.ant</artifactId>
-						<version>0.8.0</version>
+						<version>0.8.5</version>
 					</dependency>
 					<dependency>
 						<groupId>ant-contrib</groupId>
