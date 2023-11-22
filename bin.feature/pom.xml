@@ -8,6 +8,6 @@
 		<version>0.3.6-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>nl.esciencecenter.e3dchem.knime.plants.feature</artifactId>
+	<artifactId>nl.esciencecenter.e3dchem.knime.plants.bin.feature</artifactId>
 	<packaging>eclipse-feature</packaging>
 </project>

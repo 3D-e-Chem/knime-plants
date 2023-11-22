@@ -24,8 +24,6 @@ authors:
 - given-names: Chris
   family-names: de Graaf
   affiliation: Vrije Universiteit Amsterdam
-version: v0.3.5
-date-released: 2019-06-27
 repository-code: https://github.com/3D-e-Chem/knime-plants
 license: Apache-2.0
 references:

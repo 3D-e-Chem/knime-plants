@@ -2,19 +2,18 @@
 
 KNIME nodes to configure, run and analyze PLANTS protein-ligand docking
 
-PLANTS homepage at http://www.mnf.uni-tuebingen.de/fachbereiche/pharmazie-und-biochemie/pharmazie/pharmazeutische-chemie/pd-dr-t-exner/research/plants.html
+PLANTS homepage at http://www.tcd.uni-konstanz.de/research/plants.php
 
-[![Build Status Linux & OS X ](https://travis-ci.org/3D-e-Chem/knime-plants.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-plants)
-[![Build status Windows ](https://ci.appveyor.com/api/projects/status/wnwuac96jd7v76ri?svg=true)](https://ci.appveyor.com/project/3D-e-Chem/knime-plants)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nl.esciencecenter.e3dchem.knime.plants%3Anl.esciencecenter.e3dchem.knime.plants&metric=alert_status)](https://sonarcloud.io/dashboard?id=nl.esciencecenter.e3dchem.knime.plants%3Anl.esciencecenter.e3dchem.knime.plants)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=nl.esciencecenter.e3dchem.knime.plants%3Anl.esciencecenter.e3dchem.knime.plants&metric=coverage)](https://sonarcloud.io/dashboard?id=nl.esciencecenter.e3dchem.knime.plants%3Anl.esciencecenter.e3dchem.knime.plants)
+[![Java CI with Maven](https://github.com/3D-e-Chem/knime-plants/actions/workflows/build.yml/badge.svg)](https://github.com/3D-e-Chem/knime-plants/actions/workflows/build.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=3D-e-Chem_knime-plants&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=3D-e-Chem_knime-plants)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=3D-e-Chem_knime-plants&metric=coverage)](https://sonarcloud.io/summary/new_code?id=3D-e-Chem_knime-plants)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.997272.svg)](https://doi.org/10.5281/zenodo.997272)
 
 This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform build steps.
 
 # License
 
-Included in PLANTS nodes plugin is the PLANTS executable with academic license (http://www.mnf.uni-tuebingen.de/fachbereiche/pharmazie-und-biochemie/pharmazie/pharmazeutische-chemie/pd-dr-t-exner/research/plants.html). 
+Included in PLANTS nodes plugin is the PLANTS executable with academic license (http://www.tcd.uni-konstanz.de/research/plants.php). 
 When installing the plugin you have to accept this license agreement, you agree to use the included PLANTS executable only for academic usage.
 To use these nodes in a commercial manner you need to acquire a valid license yourself and configure the PLANTS node to use the commercial executable.
 
@@ -24,13 +23,13 @@ The PLANTS KNIME nodes themselves have the Apache 2.0 license.
 
 Requirements:
 
-* KNIME, https://www.knime.org, version 4.0 or higher
+* KNIME, https://www.knime.org, version 5.1 or higher
 
 Steps to get the PLANTS KNIME node inside KNIME:
 
 1. Goto Help > Install new software ... menu
 2. Press add button
-3. Fill text fields with the `https://3d-e-chem.github.io/updates` update site url.
+3. Fill text fields with the `https://3d-e-chem.github.io/updates/5.1` update site url.
 4. Select --all sites-- in `work with` pulldown
 5. Select the node
 6. Install software
@@ -59,11 +58,11 @@ The update site can be used to perform a local installation.
 
 Steps to get development environment setup based on https://github.com/knime/knime-sdk-setup#sdk-setup:
 
-1. Install Java 8
-2. Install Eclipse for [RCP and RAP developers](https://www.eclipse.org/downloads/packages/release/2018-12/r/eclipse-ide-rcp-and-rap-developers)
-3. Configure Java 8 inside Eclipse Window > Preferences > Java > Installed JREs
+1. Install Java 17
+2. Install Eclipse for [RCP and RAP developers](https://www.eclipse.org/downloads/packages/installer)
+3. Configure Java 17 inside Eclipse Window > Preferences > Java > Installed JREs
 4. Import this repo as an Existing Maven project
-5. Activate target platform by going to Window > Preferences > Plug-in Development > Target Platform and check the `KNIME Analytics Platform (4.0) - nl.esciencecenter.e3dchem.knime.plants.targetplatform/KNIME-AP-4.0.target` target definition.
+5. Activate target platform by going to Window > Preferences > Plug-in Development > Target Platform and check the `KNIME Analytics Platform (5.1) - nl.esciencecenter.e3dchem.knime.plants.targetplatform/KNIME-AP-5.1.target` target definition.
 
 During import the Tycho Eclipse providers must be installed.
 

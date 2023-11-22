@@ -2,16 +2,16 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: KNIME nodes for PLANTS
 Bundle-SymbolicName: nl.esciencecenter.e3dchem.knime.plants.plugin;singleton:=true
-Bundle-Version: 0.3.5.qualifier
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Version: 0.3.6.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-Activator: nl.esciencecenter.e3dchem.knime.plants.Activator
 Bundle-Vendor: Netherlands eScience Center
 Require-Bundle: org.eclipse.core.runtime,
- org.knime.workbench.core;bundle-version="[4.0.0,5.0.0)",
- org.knime.workbench.repository;bundle-version="[4.0.0,5.0.0)",
- org.knime.base;bundle-version="[4.0.0,5.0.0)",
- org.knime.core;bundle-version="[4.0.0,5.0.0)",
- org.knime.chem.types;bundle-version="[4.0.0,5.0.0)",
+ org.knime.workbench.core;bundle-version="[4.0.0,6.0.0)",
+ org.knime.workbench.repository;bundle-version="[4.0.0,6.0.0)",
+ org.knime.base;bundle-version="[4.0.0,6.0.0)",
+ org.knime.core;bundle-version="[4.0.0,6.0.0)",
+ org.knime.chem.types;bundle-version="[4.0.0,6.0.0)",
  com.vernalis.knime;bundle-version="[1.20.3,2.0.0)",
  nl.esciencecenter.e3dchem.plugin,
  org.eclipse.jface
@@ -21,4 +21,3 @@ Bundle-ClassPath: .,
 Export-Package: nl.esciencecenter.e3dchem.knime.plants,
  nl.esciencecenter.e3dchem.knime.plants.configure,
  nl.esciencecenter.e3dchem.knime.plants.run
-Eclipse-PlatformFilter: (| (& (osgi.arch=x86) (osgi.os=win32)) (& (osgi.arch=x86_64) (| (osgi.os=macosx) (osgi.os=linux) (osgi.os=win32))))

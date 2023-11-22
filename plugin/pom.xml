@@ -4,12 +4,12 @@
 	<parent>
 		<groupId>nl.esciencecenter.e3dchem.knime.plants</groupId>
 		<artifactId>nl.esciencecenter.e3dchem.knime.plants</artifactId>
-		<version>0.3.5-SNAPSHOT</version>
+		<version>0.3.6-SNAPSHOT</version>
 	</parent>
 	<artifactId>nl.esciencecenter.e3dchem.knime.plants.plugin</artifactId>
 	<packaging>eclipse-plugin</packaging>
 	<properties>
-		<sonar.jacoco.reportPaths>../tests/target/jacoco.exec</sonar.jacoco.reportPaths>
+		<sonar.coverage.jacoco.xmlReportPaths>../tests/target/jacoco/report/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
 		<sonar.junit.reportsPath>../tests/target/surefire-reports</sonar.junit.reportsPath>
 	</properties>
 </project>
