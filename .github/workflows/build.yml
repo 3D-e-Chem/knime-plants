@@ -42,7 +42,9 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build
-      run: mvn -B verify
+      run: mvn -B package
+    - name: Test executable
+      run: bin.windows/src/main/resources/bin/PLANTS
   build-macos:
     runs-on: macos-latest
     steps:
@@ -54,4 +56,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build
-      run: Xvfb :5009 & export DISPLAY=:5009 && mvn -B verify
+      run: mvn package
+    - name: Test executable
+      run: bin.macosx/src/main/resources/bin/PLANTS
