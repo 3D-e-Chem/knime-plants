@@ -163,6 +163,7 @@
 		<module>bin.macosx</module>
 		<module>bin.windows</module>
 		<module>bin.windows32</module>
+		<module>bin.feature</module>
 		<module>targetplatform</module>
 	</modules>
 </project>

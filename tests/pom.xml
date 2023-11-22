@@ -152,7 +152,7 @@
 							</requirement>
 							<requirement>
 								<type>eclipse-feature</type>
-								<id>nl.esciencecenter.e3dchem.knime.plants.feature</id>
+								<id>nl.esciencecenter.e3dchem.knime.plants.bin.feature</id>
 								<versionRange>0.0.0</versionRange>
 							</requirement>
 							</extraRequirements>

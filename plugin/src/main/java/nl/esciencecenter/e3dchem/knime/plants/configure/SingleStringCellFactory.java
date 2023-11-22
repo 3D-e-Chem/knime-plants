@@ -20,7 +20,12 @@ public class SingleStringCellFactory extends SingleCellFactory  {
 	}
 
     @Override
+    public DataCell[] getCells(final DataRow row) {
+        return new DataCell[] { getCell(row) };
+    }
+
+    @Override
     public DataCell[] getCells(final DataRow row, final long rowIndex) {
-        return new DataCell[] { getCell(row, rowIndex) };
+        return new DataCell[] { getCell(row) };
     }
 }

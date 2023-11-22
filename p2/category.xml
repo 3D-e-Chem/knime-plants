@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
+   <feature id="nl.esciencecenter.e3dchem.knime.plants.bin.feature" version="0.3.5.qualifier">
+      <category name="nl.esciencecenter.3D-e-Chem"/>
+   </feature>
    <feature id="nl.esciencecenter.e3dchem.knime.plants.feature" version="0.3.5.qualifier">
       <category name="nl.esciencecenter.3D-e-Chem"/>
    </feature>
